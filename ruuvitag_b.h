@@ -82,7 +82,7 @@ extern "C" {
 #define CTS_PIN_NUMBER  NRF_GPIO_UNUSED
 #define HWFC            false
 
-#define SPI_INSTANCE  0
+#define BOARD_SPI_INSTANCE  0
 #define SPIM0_SCK_PIN   29    // SPI clock GPIO pin number.
 #define SPIM0_MOSI_PIN  25    // SPI Master Out Slave In GPIO pin number.
 #define SPIM0_MISO_PIN  28    // SPI Master In Slave Out GPIO pin number.
