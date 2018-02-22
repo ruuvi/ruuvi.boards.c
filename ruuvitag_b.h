@@ -83,7 +83,9 @@ extern "C" {
 #define HWFC            false
 
 #define BOARD_SPI_INSTANCE  0
-#define BOARD_SPI_FREQUENCY RUUVI_SPI_FREQ_1M  // Use 1 MHz if connecting logic analyzer, 8 MHz otherwise
+#define BOARD_SPI_FREQUENCY RUUVI_SPI_FREQ_8M  // Use 1 MHz if connecting logic analyzer, 8 MHz otherwise
+//#define BOARD_SPI_FREQUENCY RUUVI_SPI_FREQ_1M  // Use 1 MHz if connecting logic analyzer, 8 MHz otherwise
+//#define BOARD_SPI_FREQUENCY RUUVI_SPI_FREQ_0M25  // Use 1 MHz if connecting logic analyzer, 8 MHz otherwise
 #define SPIM0_SCK_PIN   29    // SPI clock GPIO pin number.
 #define SPIM0_MOSI_PIN  25    // SPI Master Out Slave In GPIO pin number.
 #define SPIM0_MISO_PIN  28    // SPI Master In Slave Out GPIO pin number.
