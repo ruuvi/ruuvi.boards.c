@@ -39,6 +39,7 @@
  */
 #ifndef RUUVITAG_B_H
 #define RUUVITAG_B_H
+#warning "Incluging RT"
 
 #ifdef __cplusplus
 extern "C" {
@@ -94,6 +95,9 @@ extern "C" {
 
 #define INT_ACC1_PIN       2  // Accelerometer interrupt 1
 #define INT_ACC2_PIN       6  // Accelerometer interrupt 2
+
+#define LIS2DH12_ACCELERATION 1
+#define BME280_ENVIRONMENTAL 1
 
 #define REVERSE_PROT_VOLT_DROP_MV 1 //!< Typical forward voltage drop of the mosfet
 
