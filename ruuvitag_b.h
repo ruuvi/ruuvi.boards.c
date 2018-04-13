@@ -44,7 +44,9 @@
 extern "C" {
 #endif
 
-#include "nrf_gpio.h"
+#include <stdbool.h> // Required by boards.h
+#include <stdint.h>  // Required by boards.h
+#include "nrf_peripherals.h" // GPIO definitions
 
 // LEDs definitions for RuuviTag B
 #define LEDS_NUMBER    2
@@ -59,6 +61,8 @@ extern "C" {
 #define LEDS_INV_MASK  LEDS_MASK
 
 #define LEDS_LIST { LED_1, LED_2 }
+#define LED_RED   LED_1
+#define LED_GREEN LED_2
 
 #define BSP_LED_0      LED_1
 #define BSP_LED_1      LED_2
@@ -97,6 +101,12 @@ extern "C" {
 
 #define LIS2DH12_ACCELERATION 1
 #define BME280_ENVIRONMENTAL 1
+
+#define DEVICE_MANUFACTURER "Ruuvi Innovations Ltd"
+#define DEVICE_NAME "Ruuvi "                                   /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_MODEL "RuuviTag B"
+#define DEVICE_HWREV "06"
+
 
 #define REVERSE_PROT_VOLT_DROP_MV 1 //!< Typical forward voltage drop of the mosfet
 
