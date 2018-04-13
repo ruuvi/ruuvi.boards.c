@@ -39,7 +39,6 @@
  */
 #ifndef RUUVITAG_B_H
 #define RUUVITAG_B_H
-#warning "Incluging RT"
 
 #ifdef __cplusplus
 extern "C" {
