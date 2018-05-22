@@ -95,6 +95,7 @@ extern "C" {
 #define SPIM0_MISO_PIN  28    // SPI Master In Slave Out GPIO pin number.
 #define SPIM0_SS_ACCELERATION_PIN   8  // SPI Slave Select (accelerometer)
 #define SPIM0_SS_ENVIRONMENTAL_PIN  3  // SPI Slave Select (BME280)
+#define SPI_SS_LIST {SPIM0_SS_ACCELERATION_PIN, SPIM0_SS_ENVIRONMENTAL_PIN}
 
 #define INT_ACC1_PIN       2  // Accelerometer interrupt 1
 #define INT_ACC2_PIN       6  // Accelerometer interrupt 2
