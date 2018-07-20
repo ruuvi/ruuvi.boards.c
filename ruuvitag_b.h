@@ -40,56 +40,21 @@
 #ifndef RUUVITAG_B_H
 #define RUUVITAG_B_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-#include <stdbool.h> // Required by boards.h
-#include <stdint.h>  // Required by boards.h
-#include "nrf_peripherals.h" // GPIO definitions
-
 // LEDs definitions for RuuviTag B
 #define LEDS_NUMBER    2
-
-#define LED_START      17
 #define LED_1          17
 #define LED_2          19
-#define LED_STOP       19
-
 #define LEDS_ACTIVE_STATE 0
-
-#define LEDS_INV_MASK  LEDS_MASK
 
 #define LEDS_LIST { LED_1, LED_2 }
 #define LED_RED   LED_1
 #define LED_GREEN LED_2
 
-#define BSP_LED_0      LED_1
-#define BSP_LED_1      LED_2
-
 #define BUTTONS_NUMBER 1
-
-#define BUTTON_START   13
 #define BUTTON_1       13
-#define BUTTON_STOP    13
-#define BUTTON_PULL    NRF_GPIO_PIN_PULLUP
-
 #define BUTTONS_ACTIVE_STATE 0
-
 #define BUTTONS_LIST { BUTTON_1 }
 
-#define BSP_BUTTON_0   BUTTON_1
-
-#define RX_PIN_NUMBER   4
-#define TX_PIN_NUMBER   5
-#define RTS_PIN_NUMBER  NRF_GPIO_UNUSED
-#define CTS_PIN_NUMBER  NRF_GPIO_UNUSED
-#define HWFC            false
-
-#define BOARD_SPI_INSTANCE  0
-#define BOARD_SPI_FREQUENCY RUUVI_SPI_FREQ_8M  // Use 1 MHz if connecting logic analyzer, 8 MHz otherwise
-//#define BOARD_SPI_FREQUENCY RUUVI_SPI_FREQ_1M  // Use 1 MHz if connecting logic analyzer, 8 MHz otherwise
-//#define BOARD_SPI_FREQUENCY RUUVI_SPI_FREQ_0M25  // Use 1 MHz if connecting logic analyzer, 8 MHz otherwise
 #define SPIM0_SCK_PIN   29    // SPI clock GPIO pin number.
 #define SPIM0_MOSI_PIN  25    // SPI Master Out Slave In GPIO pin number.
 #define SPIM0_MISO_PIN  28    // SPI Master In Slave Out GPIO pin number.
@@ -100,25 +65,9 @@ extern "C" {
 #define INT_ACC1_PIN       2  // Accelerometer interrupt 1
 #define INT_ACC2_PIN       6  // Accelerometer interrupt 2
 
-#define LIS2DH12_ACCELERATION 1
-#define BME280_ENVIRONMENTAL 1
-
-#define DEVICE_MANUFACTURER "Ruuvi Innovations Ltd"
-#define DEVICE_NAME "Ruuvi "                                   /**< Name of device. Will be included in the advertising data. */
-#define DEVICE_MODEL "RuuviTag B"
-#define DEVICE_HWREV "06"
-
-
-#define REVERSE_PROT_VOLT_DROP_MV 1 //!< Typical forward voltage drop of the mosfet
-
 // Low frequency clock source to be used by the SoftDevice
 #define NRF_CLOCK_LFCLKSRC      {.source       = NRF_CLOCK_LF_SRC_XTAL,      \
                                  .rc_ctiv      = 0,                          \
                                  .rc_temp_ctiv = 0,                          \
                                  .accuracy     = NRF_CLOCK_LF_ACCURACY_20_PPM}
-
-#ifdef __cplusplus
-}
 #endif
-
-#endif // PCA10040_H
