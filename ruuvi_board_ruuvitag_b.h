@@ -37,37 +37,34 @@
  * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-#ifndef RUUVITAG_B_H
-#define RUUVITAG_B_H
+#ifndef RUUVI_BOARD_RUUVITAG_B_H
+#define RUUVI_BOARD_RUUVITAG_B_H
 
-// LEDs definitions for RuuviTag B
-#define LEDS_NUMBER    2
-#define LED_1          17
-#define LED_2          19
-#define LEDS_ACTIVE_STATE 0
+// LED definitions for RuuviTag B
+#define RUUVI_BOARD_LEDS_NUMBER               2
+#define RUUVI_BOARD_LED_1                     17
+#define RUUVI_BOARD_LED_2                     19
+#define RUUVI_BOARD_LEDS_ACTIVE_STATE         0
+#define RUUVI_BOARD_LEDS_LIST                 { RUUVI_BOARD_LED_1, RUUVI_BOARD_LED_2 }
+#define RUUVI_BOARD_LED_RED                   RUUVI_BOARD_LED_1
+#define RUUVI_BOARD_LED_GREEN                 RUUVI_BOARD_LED_2
 
-#define LEDS_LIST { LED_1, LED_2 }
-#define LED_RED   LED_1
-#define LED_GREEN LED_2
-
-#define BUTTONS_NUMBER 1
-#define BUTTON_1       13
-#define BUTTONS_ACTIVE_STATE 0
+// Button definitions for RuuviTag B
+#define RUUVI_BOARD_BUTTONS_NUMBER            1
+#define RUUVI_BOARD_BUTTON_1                  13
+#define RUUVI_BOARD_BUTTONS_ACTIVE_STATE      0
 #define BUTTONS_LIST { BUTTON_1 }
 
-#define SPIM0_SCK_PIN   29    // SPI clock GPIO pin number.
-#define SPIM0_MOSI_PIN  25    // SPI Master Out Slave In GPIO pin number.
-#define SPIM0_MISO_PIN  28    // SPI Master In Slave Out GPIO pin number.
-#define SPIM0_SS_ACCELERATION_PIN   8  // SPI Slave Select (accelerometer)
-#define SPIM0_SS_ENVIRONMENTAL_PIN  3  // SPI Slave Select (BME280)
-#define SPI_SS_LIST {SPIM0_SS_ACCELERATION_PIN, SPIM0_SS_ENVIRONMENTAL_PIN}
+// SPI definitions for RuuviTag B
+#define RUUVI_BOARD_SPI_SCK_PIN               29    // SPI clock GPIO pin number.
+#define RUUVI_BOARD_SPI_MOSI_PIN              25    // SPI Master Out Slave In GPIO pin number.
+#define RUUVI_BOARD_SPI_MISO_PIN              28    // SPI Master In Slave Out GPIO pin number.
+#define RUUVI_BOARD_SPI_SS_ACCELERATION_PIN   8  // SPI Slave Select (accelerometer)
+#define RUUVI_BOARD_SPI_SS_ENVIRONMENTAL_PIN  3  // SPI Slave Select (BME280)
+#define RUUVI_BOARD_SPI_SS_LIST               {RUUVI_BOARD_SPI_SS_ACCELERATION_PIN, RUUVI_BOARD_SPI_SS_ENVIRONMENTAL_PIN}
 
-#define INT_ACC1_PIN       2  // Accelerometer interrupt 1
-#define INT_ACC2_PIN       6  // Accelerometer interrupt 2
+// Interrupt definitions for RuuviTag B
+#define RUUVI_BOARD_INT_ACC1_PIN              2  // Accelerometer interrupt 1
+#define RUUVI_BOARD_INT_ACC2_PIN              6  // Accelerometer interrupt 2
 
-// Low frequency clock source to be used by the SoftDevice
-#define NRF_CLOCK_LFCLKSRC      {.source       = NRF_CLOCK_LF_SRC_XTAL,      \
-                                 .rc_ctiv      = 0,                          \
-                                 .rc_temp_ctiv = 0,                          \
-                                 .accuracy     = NRF_CLOCK_LF_ACCURACY_20_PPM}
 #endif
