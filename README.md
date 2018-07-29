@@ -11,5 +11,11 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
-## 3.1.1 Style fixes, rename files
-## 3.1.0 Clear Nordic BSP-specific defines out as well as some not-yet-implemented peripheral definitions
+## 3.2.0
+No change, but bump version number for compatibility with ruuvi.firmware.c
+
+## 3.1.1 
+Style fixes, rename files
+
+## 3.1.0 
+Clear Nordic BSP-specific defines out as well as some not-yet-implemented peripheral definitions
