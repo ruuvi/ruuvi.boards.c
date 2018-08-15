@@ -67,6 +67,7 @@
 #define RUUVI_BOARD_INT_ACC1_PIN              2  // Accelerometer interrupt 1
 #define RUUVI_BOARD_INT_ACC2_PIN              6  // Accelerometer interrupt 2
 
+// total number of GPIO pins
 #define RUUVI_BOARD_GPIO_NUMBER               32
 
 #endif
