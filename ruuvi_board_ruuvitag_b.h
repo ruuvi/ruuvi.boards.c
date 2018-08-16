@@ -56,12 +56,17 @@
 #define BUTTONS_LIST { BUTTON_1 }
 
 // SPI definitions for RuuviTag B
-#define RUUVI_BOARD_SPI_SCK_PIN               29    // SPI clock GPIO pin number.
-#define RUUVI_BOARD_SPI_MOSI_PIN              25    // SPI Master Out Slave In GPIO pin number.
-#define RUUVI_BOARD_SPI_MISO_PIN              28    // SPI Master In Slave Out GPIO pin number.
+#define RUUVI_BOARD_SPI_SCLK_PIN              29 // SPI clock GPIO pin number.
+#define RUUVI_BOARD_SPI_MOSI_PIN              25 // SPI Master Out Slave In GPIO pin number.
+#define RUUVI_BOARD_SPI_MISO_PIN              28 // SPI Master In Slave Out GPIO pin number.
 #define RUUVI_BOARD_SPI_SS_ACCELERATION_PIN   8  // SPI Slave Select (accelerometer)
 #define RUUVI_BOARD_SPI_SS_ENVIRONMENTAL_PIN  3  // SPI Slave Select (BME280)
 #define RUUVI_BOARD_SPI_SS_LIST               {RUUVI_BOARD_SPI_SS_ACCELERATION_PIN, RUUVI_BOARD_SPI_SS_ENVIRONMENTAL_PIN}
+#define RUUVI_BOARD_SPI_FREQUENCY_1M          0
+#define RUUVI_BOARD_SPI_FREQUENCY_2M          1
+#define RUUVI_BOARD_SPI_FREQUENCY_4M          2
+#define RUUVI_BOARD_SPI_FREQUENCY_8M          3
+#define RUUVI_BOARD_SPI_FREQ                  RUUVI_BOARD_SPI_FREQUENCY_8M
 
 // Interrupt definitions for RuuviTag B
 #define RUUVI_BOARD_INT_ACC1_PIN              2  // Accelerometer interrupt 1
