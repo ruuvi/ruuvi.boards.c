@@ -54,6 +54,7 @@
 #define RUUVI_BOARD_BUTTON_1                  13
 #define RUUVI_BOARD_BUTTONS_ACTIVE_STATE      0
 #define BUTTONS_LIST { BUTTON_1 }
+#define RUUVI_BOARD_BUTTON_DEBOUNCE_PERIOD_MS 50
 
 // SPI definitions for RuuviTag B
 #define RUUVI_BOARD_SPI_SCLK_PIN              29 // SPI clock GPIO pin number.
