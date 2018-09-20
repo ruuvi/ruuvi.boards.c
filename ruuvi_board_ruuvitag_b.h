@@ -81,4 +81,25 @@
 #define RUUVI_BOARD_ENVIRONMENTAL_MCU_PRESENT      1
 #define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_PRESENT 1
 
+// Radio definitions
+#define RUUVI_BOARD_BLE_MANUFACTURER_ID 0x0499 // Ruuvi Innovations
+#define RUUVI_BOARD_TX_POWER_0 -40
+#define RUUVI_BOARD_TX_POWER_1 -30
+#define RUUVI_BOARD_TX_POWER_2 -20
+#define RUUVI_BOARD_TX_POWER_3 -12
+#define RUUVI_BOARD_TX_POWER_4 -8
+#define RUUVI_BOARD_TX_POWER_5 -4
+#define RUUVI_BOARD_TX_POWER_6 -0
+#define RUUVI_BOARD_TX_POWER_7  4
+#define RUUVI_BOARD_TX_POWER_LIST { RUUVI_BOARD_TX_POWER_0 \\
+                                    RUUVI_BOARD_TX_POWER_1 \\
+                                    RUUVI_BOARD_TX_POWER_2 \\
+                                    RUUVI_BOARD_TX_POWER_3 \\
+                                    RUUVI_BOARD_TX_POWER_4 \\
+                                    RUUVI_BOARD_TX_POWER_5 \\
+                                    RUUVI_BOARD_TX_POWER_6 \\
+                                    RUUVI_BOARD_TX_POWER_7 \\}
+#define RUUVI_BOARD_TX_POWER_MIN RUUVI_BOARD_TX_POWER_0
+#define RUUVI_BOARD_TX_POWER_MAX RUUVI_BOARD_TX_POWER_7
+
 #endif
