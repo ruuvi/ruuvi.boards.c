@@ -76,6 +76,9 @@
 // Total number of GPIO pins
 #define RUUVI_BOARD_GPIO_NUMBER               32
 
+// DC/DC converters
+#define RUUVI_BOARD_DCDC_INTERNAL_INSTALLED 1
+
 // Available sensors
 #define RUUVI_BOARD_ENVIRONMENTAL_BME280_PRESENT   1
 #define RUUVI_BOARD_ENVIRONMENTAL_MCU_PRESENT      1
