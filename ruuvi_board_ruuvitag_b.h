@@ -53,7 +53,7 @@
 #define RUUVI_BOARD_BUTTONS_NUMBER            1
 #define RUUVI_BOARD_BUTTON_1                  13
 #define RUUVI_BOARD_BUTTONS_ACTIVE_STATE      0
-#define BUTTONS_LIST { BUTTON_1 }
+#define RUUVI_BOARD_BUTTONS_LIST              { RUUVI_BOARD_BUTTON_1 }
 #define RUUVI_BOARD_BUTTON_DEBOUNCE_PERIOD_MS 50
 
 // SPI definitions for RuuviTag B
@@ -77,7 +77,7 @@
 #define RUUVI_BOARD_GPIO_NUMBER               32
 
 // DC/DC converters
-#define RUUVI_BOARD_DCDC_INTERNAL_INSTALLED 1
+#define RUUVI_BOARD_DCDC_INTERNAL_INSTALLED   1
 
 // Available sensors
 #define RUUVI_BOARD_ENVIRONMENTAL_BME280_PRESENT   1
