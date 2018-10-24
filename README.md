@@ -1,5 +1,6 @@
 # ruuvi.boards.c
 Ruuvi board definitions. Has pinouts of Ruuvi boards as well as default configuration for some peripherals.
+In alpha stage, note recommended for any use yet.
 
 # Versioning
 The versioning matches Ruuvi blog progression, i.e. you can use 3.1.0 with ruuvi.firmware.c 3.1.0 and ruuvi.drivers.c 3.1.0

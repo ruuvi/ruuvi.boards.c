@@ -4,9 +4,23 @@
  * License: BSD-3
  * Author: Otso Jousimaa <otso@ojousima.net>
  */
+#ifndef CUSTOM_BOARD_H
+#define CUSTOM_BOARD_H
+
 #ifdef BOARD_PROPRIETARY
   #include "proprietary_board.h"
 #endif
 #ifdef BOARD_RUUVITAG_B
   #include "ruuvi_board_ruuvitag_b.h"
+#endif
+
+#define BUTTON_PULL          NRF_GPIO_PIN_PULLUP
+#define BUTTONS_NUMBER       RUUVI_BOARD_BUTTONS_NUMBER
+#define BUTTONS_ACTIVE_STATE RUUVI_BOARD_BUTTONS_ACTIVE_STATE
+#define BUTTONS_LIST         RUUVI_BOARD_BUTTONS_LIST 
+
+#define LEDS_NUMBER          RUUVI_BOARD_LEDS_NUMBER
+#define LEDS_ACTIVE_STATE    RUUVI_BOARD_LEDS_ACTIVE_STATE
+#define LEDS_LIST            RUUVI_BOARD_LEDS_LIST
+
 #endif
