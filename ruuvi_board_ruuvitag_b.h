@@ -40,6 +40,9 @@
 #ifndef RUUVI_BOARD_RUUVITAG_B_H
 #define RUUVI_BOARD_RUUVITAG_B_H
 
+#define RUUVI_BOARD_MODEL_STRING              "RUUVITAG_B"
+#define RUUVI_BOARD_MANUFACTURER_STRING       "Ruuvi Innovations Ltd"
+
 // LED definitions for RuuviTag B
 #define RUUVI_BOARD_LEDS_NUMBER               2
 #define RUUVI_BOARD_LED_1                     17
