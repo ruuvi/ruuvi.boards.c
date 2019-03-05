@@ -72,6 +72,13 @@
 #define RUUVI_BOARD_SPI_FREQUENCY_8M          3
 #define RUUVI_BOARD_SPI_FREQ                  RUUVI_BOARD_SPI_FREQUENCY_8M
 
+#define RUUVI_BOARD_I2C_SDA_PIN               4
+#define RUUVI_BOARD_I2C_SCL_PIN               5
+#define RUUVI_BOARD_I2C_FREQUENCY_100k        0
+#define RUUVI_BOARD_I2C_FREQUENCY_250k        1
+#define RUUVI_BOARD_I2C_FREQUENCY_400k        2
+#define RUUVI_BOARD_I2C_FREQ                  RUUVI_BOARD_I2C_FREQUENCY_100k
+
 // Interrupt definitions for RuuviTag B
 #define RUUVI_BOARD_INT_ACC1_PIN              2  // Accelerometer interrupt 1
 #define RUUVI_BOARD_INT_ACC2_PIN              6  // Accelerometer interrupt 2
@@ -84,8 +91,13 @@
 
 // Available sensors
 #define RUUVI_BOARD_ENVIRONMENTAL_BME280_PRESENT   1
+#define RUUVI_BOARD_ENVIRONMENTAL_BME280_SPI_USE   0
+#define RUUVI_BOARD_ENVIRONMENTAL_BME280_I2C_USE   1
+#define RUUVI_BOARD_BME280_I2C_ADDRESS             0x76 //<! Depends on SDO pin setting, LOW 0x76 HIGH 0x77
 #define RUUVI_BOARD_ENVIRONMENTAL_MCU_PRESENT      1
 #define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_PRESENT 1
+#define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_SPI_USE 0
+#define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_I2C_USE 0
 
 // Radio definitions
 #define RUUVI_BOARD_BLE_MANUFACTURER_ID 0x0499 // Ruuvi Innovations
