@@ -42,11 +42,12 @@
 
 #define RUUVI_BOARD_MODEL_STRING              "RUUVITAG_B"
 #define RUUVI_BOARD_MANUFACTURER_STRING       "Ruuvi Innovations Ltd"
+#define RUUVI_BOARD_PORT_PIN_MAP(PORT, PIN)    ((PORT<<8) + (PIN))
 
 // LED definitions for RuuviTag B
 #define RUUVI_BOARD_LEDS_NUMBER               2
-#define RUUVI_BOARD_LED_1                     17
-#define RUUVI_BOARD_LED_2                     19
+#define RUUVI_BOARD_LED_1                     RUUVI_BOARD_PORT_PIN_MAP(0, 17)
+#define RUUVI_BOARD_LED_2                     RUUVI_BOARD_PORT_PIN_MAP(0, 19)
 #define RUUVI_BOARD_LEDS_ACTIVE_STATE         0
 #define RUUVI_BOARD_LEDS_LIST                 { RUUVI_BOARD_LED_1, RUUVI_BOARD_LED_2 }
 #define RUUVI_BOARD_LED_RED                   RUUVI_BOARD_LED_1
@@ -54,17 +55,17 @@
 
 // Button definitions for RuuviTag B
 #define RUUVI_BOARD_BUTTONS_NUMBER            1
-#define RUUVI_BOARD_BUTTON_1                  13
+#define RUUVI_BOARD_BUTTON_1                  RUUVI_BOARD_PORT_PIN_MAP(0, 13)
 #define RUUVI_BOARD_BUTTONS_ACTIVE_STATE      0
 #define RUUVI_BOARD_BUTTONS_LIST              { RUUVI_BOARD_BUTTON_1 }
 #define RUUVI_BOARD_BUTTON_DEBOUNCE_PERIOD_MS 50
 
 // SPI definitions for RuuviTag B
-#define RUUVI_BOARD_SPI_SCLK_PIN              29 // SPI clock GPIO pin number.
-#define RUUVI_BOARD_SPI_MOSI_PIN              25 // SPI Master Out Slave In GPIO pin number.
-#define RUUVI_BOARD_SPI_MISO_PIN              28 // SPI Master In Slave Out GPIO pin number.
-#define RUUVI_BOARD_SPI_SS_ACCELEROMETER_PIN  8  // SPI Slave Select (accelerometer)
-#define RUUVI_BOARD_SPI_SS_ENVIRONMENTAL_PIN  3  // SPI Slave Select (BME280)
+#define RUUVI_BOARD_SPI_SCLK_PIN              RUUVI_BOARD_PORT_PIN_MAP(0, 29) // SPI clock GPIO pin number.
+#define RUUVI_BOARD_SPI_MOSI_PIN              RUUVI_BOARD_PORT_PIN_MAP(0, 25) // SPI Master Out Slave In GPIO pin number.
+#define RUUVI_BOARD_SPI_MISO_PIN              RUUVI_BOARD_PORT_PIN_MAP(0, 28) // SPI Master In Slave Out GPIO pin number.
+#define RUUVI_BOARD_SPI_SS_ACCELEROMETER_PIN  RUUVI_BOARD_PORT_PIN_MAP(0,  8)  // SPI Slave Select (accelerometer)
+#define RUUVI_BOARD_SPI_SS_ENVIRONMENTAL_PIN  RUUVI_BOARD_PORT_PIN_MAP(0,  3)  // SPI Slave Select (BME280)
 #define RUUVI_BOARD_SPI_SS_LIST               {RUUVI_BOARD_SPI_SS_ACCELEROMETER_PIN, RUUVI_BOARD_SPI_SS_ENVIRONMENTAL_PIN}
 #define RUUVI_BOARD_SPI_FREQUENCY_1M          0
 #define RUUVI_BOARD_SPI_FREQUENCY_2M          1
@@ -72,16 +73,16 @@
 #define RUUVI_BOARD_SPI_FREQUENCY_8M          3
 #define RUUVI_BOARD_SPI_FREQ                  RUUVI_BOARD_SPI_FREQUENCY_8M
 
-#define RUUVI_BOARD_I2C_SDA_PIN               4
-#define RUUVI_BOARD_I2C_SCL_PIN               5
+#define RUUVI_BOARD_I2C_SDA_PIN               RUUVI_BOARD_PORT_PIN_MAP(0, 4)
+#define RUUVI_BOARD_I2C_SCL_PIN               RUUVI_BOARD_PORT_PIN_MAP(0, 5)
 #define RUUVI_BOARD_I2C_FREQUENCY_100k        0
 #define RUUVI_BOARD_I2C_FREQUENCY_250k        1
 #define RUUVI_BOARD_I2C_FREQUENCY_400k        2
 #define RUUVI_BOARD_I2C_FREQ                  RUUVI_BOARD_I2C_FREQUENCY_100k
 
 // Interrupt definitions for RuuviTag B
-#define RUUVI_BOARD_INT_ACC1_PIN              2  // Accelerometer interrupt 1
-#define RUUVI_BOARD_INT_ACC2_PIN              6  // Accelerometer interrupt 2
+#define RUUVI_BOARD_INT_ACC1_PIN              RUUVI_BOARD_PORT_PIN_MAP(0, 2)  // Accelerometer interrupt 1
+#define RUUVI_BOARD_INT_ACC2_PIN              RUUVI_BOARD_PORT_PIN_MAP(0, 6)  // Accelerometer interrupt 2
 
 // Total number of GPIO pins
 #define RUUVI_BOARD_GPIO_NUMBER               32
