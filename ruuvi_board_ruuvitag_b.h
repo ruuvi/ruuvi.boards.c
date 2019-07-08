@@ -39,10 +39,9 @@
  */
 #ifndef RUUVI_BOARD_RUUVITAG_B_H
 #define RUUVI_BOARD_RUUVITAG_B_H
-
+#include "ruuvi_boards.h"
 #define RUUVI_BOARD_MODEL_STRING              "RUUVITAG_B"
 #define RUUVI_BOARD_MANUFACTURER_STRING       "Ruuvi Innovations Ltd"
-#define RUUVI_BOARD_PORT_PIN_MAP(PORT, PIN)    ((PORT<<8) + (PIN))
 
 // LED definitions for RuuviTag B
 #define RUUVI_BOARD_LEDS_NUMBER               2
