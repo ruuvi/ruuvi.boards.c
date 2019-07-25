@@ -42,6 +42,7 @@
 #include "ruuvi_boards.h"
 #define RUUVI_BOARD_MODEL_STRING              "RUUVITAG_B"
 #define RUUVI_BOARD_MANUFACTURER_STRING       "Ruuvi Innovations Ltd"
+#define RUUVI_BOARD_BLE_NAME_STRING           "Ruuvi"
 
 // LED definitions for RuuviTag B
 #define RUUVI_BOARD_LEDS_NUMBER               2
