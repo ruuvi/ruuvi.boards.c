@@ -68,9 +68,10 @@
 #define RUUVI_BOARD_LEDS_NUMBER               1
 #define RUUVI_BOARD_LED_1                     RUUVI_BOARD_PORT_PIN_MAP(0, 17)
 #define RUUVI_BOARD_LEDS_ACTIVE_STATE         1
-#define RUUVI_BOARD_LEDS_LIST                 { RUUVI_BOARD_LED_1, RUUVI_BOARD_LED_2 }
+#define RUUVI_BOARD_LEDS_LIST                 { RUUVI_BOARD_LED_1 }
 #define RUUVI_BOARD_LED_RED                   RUUVI_BOARD_LED_1
-#define RUUVI_BOARD_LED_GREEN                 RUUVI_BOARD_LED_2
+#define RUUVI_BOARD_LED_ACTIVITY              RUUVI_BOARD_LED_1
+#define RUUVI_BOARD_LED_STATUS_OK             RUUVI_BOARD_LED_1
 
 // Button definitions
 #define RUUVI_BOARD_BUTTONS_NUMBER            0
@@ -96,7 +97,7 @@
 #define RUUVI_BOARD_I2C_FREQUENCY_100k        0
 #define RUUVI_BOARD_I2C_FREQUENCY_250k        1
 #define RUUVI_BOARD_I2C_FREQUENCY_400k        2
-#define RUUVI_BOARD_I2C_FREQ                  RUUVI_BOARD_I2C_FREQUENCY_400k
+#define RUUVI_BOARD_I2C_FREQ                  RUUVI_BOARD_I2C_FREQUENCY_250k
 
 // GPIO definitions
 #define RUUVI_BOARD_GPIO_NUMBER  32
