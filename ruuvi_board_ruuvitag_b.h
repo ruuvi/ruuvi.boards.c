@@ -43,6 +43,28 @@
 #define RUUVI_BOARD_MODEL_STRING              "RUUVITAG_B"
 #define RUUVI_BOARD_MANUFACTURER_STRING       "Ruuvi Innovations Ltd"
 #define RUUVI_BOARD_BLE_NAME_STRING           "Ruuvi"
+// Radio definitions
+#define RUUVI_BOARD_BLE_MANUFACTURER_ID 0x0499 // Ruuvi Innovations
+#define RUUVI_BOARD_TX_POWER_0 -40
+#define RUUVI_BOARD_TX_POWER_1 -30
+#define RUUVI_BOARD_TX_POWER_2 -20
+#define RUUVI_BOARD_TX_POWER_3 -12
+#define RUUVI_BOARD_TX_POWER_4 -8
+#define RUUVI_BOARD_TX_POWER_5 -4
+#define RUUVI_BOARD_TX_POWER_6 -0
+#define RUUVI_BOARD_TX_POWER_7  4
+#define RUUVI_BOARD_TX_POWER_LIST { RUUVI_BOARD_TX_POWER_0 \\
+                                    RUUVI_BOARD_TX_POWER_1 \\
+                                    RUUVI_BOARD_TX_POWER_2 \\
+                                    RUUVI_BOARD_TX_POWER_3 \\
+                                    RUUVI_BOARD_TX_POWER_4 \\
+                                    RUUVI_BOARD_TX_POWER_5 \\
+                                    RUUVI_BOARD_TX_POWER_6 \\
+                                    RUUVI_BOARD_TX_POWER_7 \\}
+#define RUUVI_BOARD_TX_POWER_MIN RUUVI_BOARD_TX_POWER_0
+#define RUUVI_BOARD_TX_POWER_MAX RUUVI_BOARD_TX_POWER_7
+#define RUUVI_BOARD_BLE_2MBPS_SUPPORTED     1
+#define RUUVI_BOARD_BLE_CODED_SUPPORTED     0
 
 // LED definitions for RuuviTag B
 #define RUUVI_BOARD_LEDS_NUMBER               2
@@ -89,8 +111,11 @@
 // Total number of GPIO pins
 #define RUUVI_BOARD_GPIO_NUMBER               32
 
-// DC/DC converters
-#define RUUVI_BOARD_DCDC_INTERNAL_INSTALLED   1
+// Peripherals
+#define RUUVI_BOARD_DCDC_INTERNAL_INSTALLED 1
+#define RUUVI_BOARD_NFC_INTERNAL_INSTALLED  0
+#define RUUVI_BOARD_APP_FLASH_SIZE          0x5000 //!< Bytes
+#define RUUVI_BOARD_APP_PAGES               5      //!< Erase units
 
 // Available sensors
 #define RUUVI_BOARD_ENVIRONMENTAL_BME280_PRESENT   1
@@ -103,26 +128,5 @@
 #define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_PRESENT 1
 #define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_SPI_USE 1
 #define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_I2C_USE 0
-
-// Radio definitions
-#define RUUVI_BOARD_BLE_MANUFACTURER_ID 0x0499 // Ruuvi Innovations
-#define RUUVI_BOARD_TX_POWER_0 -40
-#define RUUVI_BOARD_TX_POWER_1 -30
-#define RUUVI_BOARD_TX_POWER_2 -20
-#define RUUVI_BOARD_TX_POWER_3 -12
-#define RUUVI_BOARD_TX_POWER_4 -8
-#define RUUVI_BOARD_TX_POWER_5 -4
-#define RUUVI_BOARD_TX_POWER_6 -0
-#define RUUVI_BOARD_TX_POWER_7  4
-#define RUUVI_BOARD_TX_POWER_LIST { RUUVI_BOARD_TX_POWER_0 \\
-                                    RUUVI_BOARD_TX_POWER_1 \\
-                                    RUUVI_BOARD_TX_POWER_2 \\
-                                    RUUVI_BOARD_TX_POWER_3 \\
-                                    RUUVI_BOARD_TX_POWER_4 \\
-                                    RUUVI_BOARD_TX_POWER_5 \\
-                                    RUUVI_BOARD_TX_POWER_6 \\
-                                    RUUVI_BOARD_TX_POWER_7 \\}
-#define RUUVI_BOARD_TX_POWER_MIN RUUVI_BOARD_TX_POWER_0
-#define RUUVI_BOARD_TX_POWER_MAX RUUVI_BOARD_TX_POWER_7
 
 #endif

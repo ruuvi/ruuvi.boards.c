@@ -37,13 +37,13 @@
  * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#ifndef RUUVI_BOARD_KAARLE_H
-#define RUUVI_BOARD_KAARLE_H
+#ifndef RUUVI_BOARD_KEIJO_H
+#define RUUVI_BOARD_KEIJO_H
 #include "ruuvi_boards.h"
 // Radio / BLE definitions
-#define RUUVI_BOARD_MODEL_STRING        "Kaarle"
+#define RUUVI_BOARD_MODEL_STRING        "Keijo"
 #define RUUVI_BOARD_MANUFACTURER_STRING "Ruuvi Innovations Ltd"
-#define RUUVI_BOARD_BLE_NAME_STRING     "Kaarle"
+#define RUUVI_BOARD_BLE_NAME_STRING     "Keijo"
 #define RUUVI_BOARD_BLE_MANUFACTURER_ID 0x0499 // Ruuvi Innovations
 #define RUUVI_BOARD_TX_POWER_0 -40
 #define RUUVI_BOARD_TX_POWER_1 -30
@@ -64,7 +64,7 @@
 #define RUUVI_BOARD_TX_POWER_MIN     RUUVI_BOARD_TX_POWER_0
 #define RUUVI_BOARD_TX_POWER_MAX     RUUVI_BOARD_TX_POWER_7
 #define RUUVI_BOARD_BLE_2MBPS_SUPPORTED     1
-#define RUUVI_BOARD_BLE_CODED_SUPPORTED     0
+#define RUUVI_BOARD_BLE_CODED_SUPPORTED     1
 
 // LED definitions
 #define RUUVI_BOARD_LEDS_NUMBER               1
@@ -121,8 +121,8 @@
 // Peripherals
 #define RUUVI_BOARD_DCDC_INTERNAL_INSTALLED 1
 #define RUUVI_BOARD_NFC_INTERNAL_INSTALLED  0
-#define RUUVI_BOARD_APP_FLASH_SIZE          0x8000 //!< Bytes
-#define RUUVI_BOARD_APP_PAGES               8      //!< Erase units
+#define RUUVI_BOARD_APP_FLASH_SIZE          0x2000 //!< Bytes
+#define RUUVI_BOARD_APP_PAGES               2      //!< Erase units
 
 // Available sensors
 #define RUUVI_BOARD_ENVIRONMENTAL_BME280_PRESENT   0

@@ -19,7 +19,9 @@
 #ifdef BOARD_KAARLE
   #include "ruuvi_board_kaarle.h"
 #endif
-
+#ifdef BOARD_KEIJO
+  #include "ruuvi_board_keijo.h"
+#endif
 /** @brief Port+pin definition for GPIO pin */
 #define RUUVI_BOARD_PORT_PIN_MAP(PORT, PIN)    ((PORT<<8) + (PIN))
 

@@ -9,8 +9,8 @@
 
 #ifdef BOARD_PROPRIETARY
   #include "proprietary_board.h"
-#elif BOARD_RUUVITAG_B
-  #include "ruuvi_board_ruuvitag_b.h"
+#else 
+  #include "ruuvi_boards.h"
 #endif
 
 // Glue logic for Nordic SDK BSP package
