@@ -113,9 +113,11 @@
 
 // Peripherals
 #define RUUVI_BOARD_DCDC_INTERNAL_INSTALLED 1
-#define RUUVI_BOARD_NFC_INTERNAL_INSTALLED  0
+#define RUUVI_BOARD_NFC_INTERNAL_INSTALLED  1
 #define RUUVI_BOARD_APP_FLASH_SIZE          0x5000 //!< Bytes
 #define RUUVI_BOARD_APP_PAGES               5      //!< Erase units
+#define RUUVI_BOARD_RTC_INSTANCES           3
+#define RUUVI_BOARD_FPU_ENABLED             1      //!< HW Floating Point Unit
 
 // Available sensors
 #define RUUVI_BOARD_ENVIRONMENTAL_BME280_PRESENT   1
