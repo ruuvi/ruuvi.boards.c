@@ -98,12 +98,24 @@
 #define RUUVI_BOARD_SPI_FREQUENCY_8M          3
 #define RUUVI_BOARD_SPI_FREQ                  RUUVI_BOARD_SPI_FREQUENCY_8M
 
+// I2C definitions for RuuviTag B
 #define RUUVI_BOARD_I2C_SDA_PIN               RUUVI_BOARD_PORT_PIN_MAP(0, 4)
 #define RUUVI_BOARD_I2C_SCL_PIN               RUUVI_BOARD_PORT_PIN_MAP(0, 5)
 #define RUUVI_BOARD_I2C_FREQUENCY_100k        0
 #define RUUVI_BOARD_I2C_FREQUENCY_250k        1
 #define RUUVI_BOARD_I2C_FREQUENCY_400k        2
 #define RUUVI_BOARD_I2C_FREQ                  RUUVI_BOARD_I2C_FREQUENCY_100k
+
+// UART definitions for RuuviTag B
+#define RUUVI_BOARD_UART_TX_PIN               RUUVI_BOARD_PORT_PIN_MAP(0, 4)
+#define RUUVI_BOARD_UART_RX_PIN               RUUVI_BOARD_PORT_PIN_MAP(0, 5)
+#define RUUVI_BOARD_UART_CTS_PIN              RUUVI_BOARD_PIN_UNUSED
+#define RUUVI_BOARD_UART_RTS_PIN              RUUVI_BOARD_PIN_UNUSED
+#define RUUVI_BOARD_HWFC_ENABLED              0
+#define RUUVI_BOARD_PARITY_ENABLED            0
+#define RUUVI_BOARD_UART_BAUDRATE_9600        0
+#define RUUVI_BOARD_UART_BAUDRATE_115200      1
+#define RUUVI_BOARD_UART_BAUDRATE             RUUVI_BOARD_UART_BAUDRATE_115200
 
 // Interrupt definitions for RuuviTag B
 #define RUUVI_BOARD_INT_ACC1_PIN              RUUVI_BOARD_PORT_PIN_MAP(0, 2)  // Accelerometer interrupt 1

@@ -22,7 +22,9 @@
 #ifdef BOARD_KEIJO
   #include "ruuvi_board_keijo.h"
 #endif
-/** @brief Port+pin definition for GPIO pin */
-#define RUUVI_BOARD_PORT_PIN_MAP(PORT, PIN)    ((PORT<<8) + (PIN))
+/** @brief Port+pin definition for GPIO pin. */
+#define RUUVI_BOARD_PORT_PIN_MAP(PORT, PIN) ((PORT<<8) + (PIN))
+/** @brief Pin not in use on this board. */
+#define RUUVI_BOARD_PIN_UNUSED              (0xFFFF)
 
 #endif
