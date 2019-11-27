@@ -60,7 +60,7 @@
                                     RUUVI_BOARD_TX_POWER_4 \\
                                     RUUVI_BOARD_TX_POWER_5 \\
                                     RUUVI_BOARD_TX_POWER_6 \\
-                                    RUUVI_BOARD_TX_POWER_7 \\}
+                                    RUUVI_BOARD_TX_POWER_7 }
 #define RUUVI_BOARD_TX_POWER_MIN RUUVI_BOARD_TX_POWER_0
 #define RUUVI_BOARD_TX_POWER_MAX RUUVI_BOARD_TX_POWER_7
 #define RUUVI_BOARD_BLE_2MBPS_SUPPORTED     1
