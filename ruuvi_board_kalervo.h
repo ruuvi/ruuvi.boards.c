@@ -42,7 +42,7 @@
 #include "ruuvi_boards.h"
 #define RUUVI_BOARD_MODEL_STRING              "Kalervo"
 #define RUUVI_BOARD_MANUFACTURER_STRING       "Ruuvi Innovations Ltd"
-#define RUUVI_BOARD_BLE_NAME_STRING           "Ruuvi"
+#define RUUVI_BOARD_BLE_NAME_STRING           "Kale"
 // Radio definitions
 #define RUUVI_BOARD_BLE_MANUFACTURER_ID 0x0499 // Ruuvi Innovations
 #define RUUVI_BOARD_TX_POWER_0 -40
