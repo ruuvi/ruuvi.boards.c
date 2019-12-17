@@ -19,6 +19,9 @@
 #ifdef BOARD_KAARLE
   #include "ruuvi_board_kaarle.h"
 #endif
+#ifdef BOARD_KALERVO
+  #include "ruuvi_board_kalervo.h"
+#endif
 #ifdef BOARD_KEIJO
   #include "ruuvi_board_keijo.h"
 #endif
