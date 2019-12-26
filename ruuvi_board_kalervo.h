@@ -38,7 +38,7 @@
  *
  */
 #ifndef RUUVI_BOARD_KALERVO_B_H
-#define RUUVI_BOARD_KALERVI_B_H
+#define RUUVI_BOARD_KALERVO_B_H
 #include "ruuvi_boards.h"
 #define RUUVI_BOARD_MODEL_STRING              "Kalervo"
 #define RUUVI_BOARD_MANUFACTURER_STRING       "Ruuvi Innovations Ltd"
