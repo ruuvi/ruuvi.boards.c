@@ -76,6 +76,7 @@
 #define RUUVI_BOARD_LED_GREEN                 RUUVI_BOARD_LED_2
 #define RUUVI_BOARD_LED_ACTIVITY              RUUVI_BOARD_LED_RED
 #define RUUVI_BOARD_LED_STATUS_OK             RUUVI_BOARD_LED_GREEN
+#define RUUVI_BOARD_LED_STATUS_ERROR          RUUVI_BOARD_LED_RED
 
 // Button definitions for RuuviTag B
 #define RUUVI_BOARD_BUTTONS_NUMBER            1

@@ -74,6 +74,7 @@
 #define RUUVI_BOARD_LED_RED                   RUUVI_BOARD_LED_1
 #define RUUVI_BOARD_LED_ACTIVITY              RUUVI_BOARD_LED_1
 #define RUUVI_BOARD_LED_STATUS_OK             RUUVI_BOARD_LED_1
+#define RUUVI_BOARD_LED_STATUS_ERROR          RUUVI_BOARD_LED_RED
 
 // Button definitions
 #define RUUVI_BOARD_BUTTONS_NUMBER            0
