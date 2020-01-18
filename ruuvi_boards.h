@@ -10,6 +10,8 @@
 #ifndef RUUVI_BOARDS_H
 #define RUUVI_BOARDS_H
 
+#define RUUVI_BOARDS_SEMVER "3.3.0"
+
 #ifdef BOARD_PROPRIETARY
   #include "proprietary_board.h"
 #endif
