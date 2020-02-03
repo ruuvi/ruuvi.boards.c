@@ -13,6 +13,12 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.2.0
+ - Add "Rauno"
+
+## 0.1.0 
+ - Signal alpha status
+
 ## 3.3.0
 Add semantic versioning string or automated checking.
 

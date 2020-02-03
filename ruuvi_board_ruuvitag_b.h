@@ -70,7 +70,7 @@
 #define RUUVI_BOARD_LEDS_NUMBER               2
 #define RUUVI_BOARD_LED_1                     RUUVI_BOARD_PORT_PIN_MAP(0, 17)
 #define RUUVI_BOARD_LED_2                     RUUVI_BOARD_PORT_PIN_MAP(0, 19)
-#define RUUVI_BOARD_LEDS_ACTIVE_STATE         0
+#define RUUVI_BOARD_LEDS_ACTIVE_STATE         {0, 0}
 #define RUUVI_BOARD_LEDS_LIST                 { RUUVI_BOARD_LED_1, RUUVI_BOARD_LED_2 }
 #define RUUVI_BOARD_LED_RED                   RUUVI_BOARD_LED_1
 #define RUUVI_BOARD_LED_GREEN                 RUUVI_BOARD_LED_2

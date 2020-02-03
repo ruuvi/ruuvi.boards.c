@@ -69,7 +69,7 @@
 // LED definitions
 #define RUUVI_BOARD_LEDS_NUMBER               1
 #define RUUVI_BOARD_LED_1                     RUUVI_BOARD_PORT_PIN_MAP(0, 25)
-#define RUUVI_BOARD_LEDS_ACTIVE_STATE         1
+#define RUUVI_BOARD_LEDS_ACTIVE_STATE         { 1 }
 #define RUUVI_BOARD_LEDS_LIST                 { RUUVI_BOARD_LED_1 }
 #define RUUVI_BOARD_LED_RED                   RUUVI_BOARD_LED_1
 #define RUUVI_BOARD_LED_ACTIVITY              RUUVI_BOARD_LED_1
