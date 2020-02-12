@@ -41,106 +41,106 @@
 #define RUUVI_BOARD_KEIJO_H
 #include "ruuvi_boards.h"
 // Radio / BLE definitions
-#define RUUVI_BOARD_MODEL_STRING        "Keijo"
-#define RUUVI_BOARD_MANUFACTURER_STRING "Ruuvi Innovations Ltd"
-#define RUUVI_BOARD_BLE_NAME_STRING     "Keijo"
-#define RUUVI_BOARD_BLE_MANUFACTURER_ID 0x0499 // Ruuvi Innovations
-#define RUUVI_BOARD_TX_POWER_0 -40
-#define RUUVI_BOARD_TX_POWER_1 -30
-#define RUUVI_BOARD_TX_POWER_2 -20
-#define RUUVI_BOARD_TX_POWER_3 -12
-#define RUUVI_BOARD_TX_POWER_4 -8
-#define RUUVI_BOARD_TX_POWER_5 -4
-#define RUUVI_BOARD_TX_POWER_6 -0
-#define RUUVI_BOARD_TX_POWER_7  4
-#define RUUVI_BOARD_TX_POWER_LIST { RUUVI_BOARD_TX_POWER_0 \\
-                                    RUUVI_BOARD_TX_POWER_1 \\
-                                    RUUVI_BOARD_TX_POWER_2 \\
-                                    RUUVI_BOARD_TX_POWER_3 \\
-                                    RUUVI_BOARD_TX_POWER_4 \\
-                                    RUUVI_BOARD_TX_POWER_5 \\
-                                    RUUVI_BOARD_TX_POWER_6 \\
-                                    RUUVI_BOARD_TX_POWER_7 }
-#define RUUVI_BOARD_TX_POWER_MIN     RUUVI_BOARD_TX_POWER_0
-#define RUUVI_BOARD_TX_POWER_MAX     RUUVI_BOARD_TX_POWER_7
-#define RUUVI_BOARD_BLE_2MBPS_SUPPORTED     1
-#define RUUVI_BOARD_BLE_CODED_SUPPORTED     1
+#define RB_MODEL_STRING        "Keijo"
+#define RB_MANUFACTURER_STRING "Ruuvi Innovations Ltd"
+#define RB_BLE_NAME_STRING     "Keijo"
+#define RB_BLE_MANUFACTURER_ID 0x0499 // Ruuvi Innovations
+#define RB_TX_POWER_0 -40
+#define RB_TX_POWER_1 -30
+#define RB_TX_POWER_2 -20
+#define RB_TX_POWER_3 -12
+#define RB_TX_POWER_4 -8
+#define RB_TX_POWER_5 -4
+#define RB_TX_POWER_6 -0
+#define RB_TX_POWER_7  4
+#define RB_TX_POWER_LIST { RB_TX_POWER_0 \\
+                                    RB_TX_POWER_1 \\
+                                    RB_TX_POWER_2 \\
+                                    RB_TX_POWER_3 \\
+                                    RB_TX_POWER_4 \\
+                                    RB_TX_POWER_5 \\
+                                    RB_TX_POWER_6 \\
+                                    RB_TX_POWER_7 }
+#define RB_TX_POWER_MIN     RB_TX_POWER_0
+#define RB_TX_POWER_MAX     RB_TX_POWER_7
+#define RB_BLE_2MBPS_SUPPORTED     1
+#define RB_BLE_CODED_SUPPORTED     1
 
 // LED definitions
-#define RUUVI_BOARD_LEDS_NUMBER               1
-#define RUUVI_BOARD_LED_1                     RUUVI_BOARD_PORT_PIN_MAP(0, 25)
-#define RUUVI_BOARD_LEDS_ACTIVE_STATE         { 1 }
-#define RUUVI_BOARD_LEDS_LIST                 { RUUVI_BOARD_LED_1 }
-#define RUUVI_BOARD_LED_RED                   RUUVI_BOARD_LED_1
-#define RUUVI_BOARD_LED_ACTIVITY              RUUVI_BOARD_LED_1
-#define RUUVI_BOARD_LED_STATUS_OK             RUUVI_BOARD_LED_1
-#define RUUVI_BOARD_LED_STATUS_ERROR          RUUVI_BOARD_LED_RED
+#define RB_LEDS_NUMBER               1
+#define RB_LED_1                     RB_PORT_PIN_MAP(0, 25)
+#define RB_LEDS_ACTIVE_STATE         { 1 }
+#define RB_LEDS_LIST                 { RB_LED_1 }
+#define RB_LED_RED                   RB_LED_1
+#define RB_LED_ACTIVITY              RB_LED_1
+#define RB_LED_STATUS_OK             RB_LED_1
+#define RB_LED_STATUS_ERROR          RB_LED_RED
 
 // Button definitions
-#define RUUVI_BOARD_BUTTONS_NUMBER            0
-#define RUUVI_BOARD_BUTTONS_ACTIVE_STATE      0
-#define RUUVI_BOARD_BUTTONS_LIST              {  }
-#define RUUVI_BOARD_BUTTON_DEBOUNCE_PERIOD_MS 0
+#define RB_BUTTONS_NUMBER            0
+#define RB_BUTTONS_ACTIVE_STATE      0
+#define RB_BUTTONS_LIST              {  }
+#define RB_BUTTON_DEBOUNCE_PERIOD_MS 0
 
 // SPI definitions
-#define RUUVI_BOARD_SPI_SCLK_PIN              RUUVI_BOARD_PORT_PIN_MAP(0, 29) // SPI clock GPIO pin number.
-#define RUUVI_BOARD_SPI_MOSI_PIN              RUUVI_BOARD_PORT_PIN_MAP(0, 26) // SPI Master Out Slave In GPIO pin number.
-#define RUUVI_BOARD_SPI_MISO_PIN              RUUVI_BOARD_PORT_PIN_MAP(0, 27) // SPI Master In Slave Out GPIO pin number.
-#define RUUVI_BOARD_SPI_SS_ACCELEROMETER_PIN  RUUVI_BOARD_PORT_PIN_MAP(0,  28)  // SPI Slave Select (accelerometer)
-#define RUUVI_BOARD_SPI_SS_LIST               {RUUVI_BOARD_SPI_SS_ACCELEROMETER_PIN}
-#define RUUVI_BOARD_SPI_FREQUENCY_1M          0
-#define RUUVI_BOARD_SPI_FREQUENCY_2M          1
-#define RUUVI_BOARD_SPI_FREQUENCY_4M          2
-#define RUUVI_BOARD_SPI_FREQUENCY_8M          3
-#define RUUVI_BOARD_SPI_FREQ                  RUUVI_BOARD_SPI_FREQUENCY_8M
+#define RB_SPI_SCLK_PIN              RB_PORT_PIN_MAP(0, 29) // SPI clock GPIO pin number.
+#define RB_SPI_MOSI_PIN              RB_PORT_PIN_MAP(0, 26) // SPI Master Out Slave In GPIO pin number.
+#define RB_SPI_MISO_PIN              RB_PORT_PIN_MAP(0, 27) // SPI Master In Slave Out GPIO pin number.
+#define RB_SPI_SS_ACCELEROMETER_PIN  RB_PORT_PIN_MAP(0,  28)  // SPI Slave Select (accelerometer)
+#define RB_SPI_SS_LIST               {RB_SPI_SS_ACCELEROMETER_PIN}
+#define RB_SPI_FREQUENCY_1M          0
+#define RB_SPI_FREQUENCY_2M          1
+#define RB_SPI_FREQUENCY_4M          2
+#define RB_SPI_FREQUENCY_8M          3
+#define RB_SPI_FREQ                  RB_SPI_FREQUENCY_8M
 
 // I2C definitions
-#define RUUVI_BOARD_I2C_SDA_PIN               RUUVI_BOARD_PORT_PIN_MAP(0, 8)
-#define RUUVI_BOARD_I2C_SCL_PIN               RUUVI_BOARD_PORT_PIN_MAP(0, 5)
-#define RUUVI_BOARD_I2C_FREQUENCY_100k        0
-#define RUUVI_BOARD_I2C_FREQUENCY_250k        1
-#define RUUVI_BOARD_I2C_FREQUENCY_400k        2
-#define RUUVI_BOARD_I2C_FREQ                  RUUVI_BOARD_I2C_FREQUENCY_250k
+#define RB_I2C_SDA_PIN               RB_PORT_PIN_MAP(0, 8)
+#define RB_I2C_SCL_PIN               RB_PORT_PIN_MAP(0, 5)
+#define RB_I2C_FREQUENCY_100k        0
+#define RB_I2C_FREQUENCY_250k        1
+#define RB_I2C_FREQUENCY_400k        2
+#define RB_I2C_FREQ                  RB_I2C_FREQUENCY_250k
 
 // GPIO definitions
-#define RUUVI_BOARD_GPIO_NUMBER  32
-#define RUUVI_BOARD_INT_ACC1_PIN  RUUVI_BOARD_PORT_PIN_MAP(0, 30)  // Accelerometer interrupt 1
-#define RUUVI_BOARD_INT_ACC2_PIN  RUUVI_BOARD_PORT_PIN_MAP(0, 31)  // Accelerometer interrupt 2
-#define RUUVI_BOARD_INT_TMP1_PIN  RUUVI_BOARD_PORT_PIN_MAP(0, 22)  // Temperature   interrupt 1
-#define RUUVI_BOARD_INT_SHT3_PIN  RUUVI_BOARD_PORT_PIN_MAP(0, 7)   // SHT3 alert pin
-#define RUUVI_BOARD_SHT3_RST_PIN  RUUVI_BOARD_PORT_PIN_MAP(0, 6)   // SHT3 reset pin
-#define RUUVI_BOARD_PHOTO_PWR_PIN RUUVI_BOARD_PORT_PIN_MAP(0, 6)   // Photodiode power pin
-#define RUUVI_BOARD_PHOTO_ACTIVE  1                                // Photodiode active state
-#define RUUVI_BOARD_PHOTO_ADC     RUUVI_BOARD_AIN2                 // Photodiode ADC
-#define RUUVI_BOARD_NTC_PWR_PIN   RUUVI_BOARD_PORT_PIN_MAP(0, 6)   // NTC power pin
-#define RUUVI_BOARD_NTC_ACTIVE    1                                // NTC active state
-#define RUUVI_BOARD_NTC_ADC       RUUVI_BOARD_AIN1                 // NTC ADC
-#define RUUVI_BOARD_LIST          { RUUVI_BOARD_PHOTO_ADC, \\
-                                    RUUVI_BOARD_NTC_ADC,   \\
-                                    RUUVI_BOARD_AINVDD }           // List of ADC pins to measure
+#define RB_GPIO_NUMBER  32
+#define RB_INT_ACC1_PIN  RB_PORT_PIN_MAP(0, 30)  // Accelerometer interrupt 1
+#define RB_INT_ACC2_PIN  RB_PORT_PIN_MAP(0, 31)  // Accelerometer interrupt 2
+#define RB_INT_TMP1_PIN  RB_PORT_PIN_MAP(0, 22)  // Temperature   interrupt 1
+#define RB_INT_SHT3_PIN  RB_PORT_PIN_MAP(0, 7)   // SHT3 alert pin
+#define RB_SHT3_RST_PIN  RB_PORT_PIN_MAP(0, 6)   // SHT3 reset pin
+#define RB_PHOTO_PWR_PIN RB_PORT_PIN_MAP(0, 6)   // Photodiode power pin
+#define RB_PHOTO_ACTIVE  1                                // Photodiode active state
+#define RB_PHOTO_ADC     RB_AIN2                 // Photodiode ADC
+#define RB_NTC_PWR_PIN   RB_PORT_PIN_MAP(0, 6)   // NTC power pin
+#define RB_NTC_ACTIVE    1                                // NTC active state
+#define RB_NTC_ADC       RB_AIN1                 // NTC ADC
+#define RB_LIST          { RB_PHOTO_ADC, \\
+                                    RB_NTC_ADC,   \\
+                                    RB_AINVDD }           // List of ADC pins to measure
 
 // Peripherals
-#define RUUVI_BOARD_DCDC_INTERNAL_INSTALLED 1
-#define RUUVI_BOARD_NFC_INTERNAL_INSTALLED  0
-#define RUUVI_BOARD_APP_FLASH_SIZE          0x2000 //!< Bytes
-#define RUUVI_BOARD_APP_PAGES               2      //!< Erase units
-#define RUUVI_BOARD_RTC_INSTANCES           2
-#define RUUVI_BOARD_FPU_ENABLED             0      //!< HW Floating Point Unit
+#define RB_DCDC_INTERNAL_INSTALLED 1
+#define RB_NFC_INTERNAL_INSTALLED  0
+#define RB_APP_FLASH_SIZE          0x0000 //!< Bytes
+#define RB_APP_PAGES               0      //!< Erase units
+#define RB_RTC_INSTANCES           2
+#define RB_FPU_ENABLED             0      //!< HW Floating Point Unit
 
 // Available sensors
-#define RUUVI_BOARD_ENVIRONMENTAL_BME280_PRESENT   0
-#define RUUVI_BOARD_ENVIRONMENTAL_BME280_SPI_USE   0
-#define RUUVI_BOARD_ENVIRONMENTAL_BME280_I2C_USE   0
-#define RUUVI_BOARD_BME280_I2C_ADDRESS             0x76 //!< Depends on SDO pin setting, LOW 0x76 HIGH 0x77
-#define RUUVI_BOARD_ENVIRONMENTAL_MCU_PRESENT      1
-#define RUUVI_BOARD_ENVIRONMENTAL_SHTCX_PRESENT    1    
-#define RUUVI_BOARD_SHTCX_I2C_ADDRESS              0x70 //!< Static
-#define RUUVI_BOARD_ENVIRONMENTAL_SHT3_PRESENT     1    
-#define RUUVI_BOARD_SHT3_I2C_ADDRESS               0x44 //!< 0x44-45 depending on ADDR pin  
-#define RUUVI_BOARD_ENVIRONMENTAL_TMP117_PRESENT   1
-#define RUUVI_BOARD_TMP117_I2C_ADDRESS             0x90 //!< 0x90-93 depending on ADD0 pin
-#define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_PRESENT 1
-#define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_SPI_USE 1
-#define RUUVI_BOARD_ACCELEROMETER_LIS2DH12_I2C_USE 0
+#define RB_ENVIRONMENTAL_BME280_PRESENT   0
+#define RB_ENVIRONMENTAL_BME280_SPI_USE   0
+#define RB_ENVIRONMENTAL_BME280_I2C_USE   0
+#define RB_BME280_I2C_ADDRESS             0x76 //!< Depends on SDO pin setting, LOW 0x76 HIGH 0x77
+#define RB_ENVIRONMENTAL_MCU_PRESENT      1
+#define RB_ENVIRONMENTAL_SHTCX_PRESENT    1    
+#define RB_SHTCX_I2C_ADDRESS              0x70 //!< Static
+#define RB_ENVIRONMENTAL_SHT3_PRESENT     1    
+#define RB_SHT3_I2C_ADDRESS               0x44 //!< 0x44-45 depending on ADDR pin  
+#define RB_ENVIRONMENTAL_TMP117_PRESENT   1
+#define RB_TMP117_I2C_ADDRESS             0x90 //!< 0x90-93 depending on ADD0 pin
+#define RB_ACCELEROMETER_LIS2DH12_PRESENT 1
+#define RB_ACCELEROMETER_LIS2DH12_SPI_USE 1
+#define RB_ACCELEROMETER_LIS2DH12_I2C_USE 0
 
 #endif
