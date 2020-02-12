@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.3.2
+ - Fix semver
+
 ## 0.3.1
  - Add button power pin definitions
 
