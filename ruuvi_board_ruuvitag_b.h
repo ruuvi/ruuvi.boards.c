@@ -79,6 +79,8 @@
 #define RB_LED_STATUS_ERROR          RB_LED_RED
 
 // Button definitions for RuuviTag B
+#define RB_BUTTON_PWR_PIN_NUMBER     0
+#define RB_BUTTON_PWR_PINS           {  }
 #define RB_BUTTONS_NUMBER            1
 #define RB_BUTTON_1                  RB_PORT_PIN_MAP(0, 13)
 #define RB_BUTTONS_ACTIVE_STATE      { 0 }

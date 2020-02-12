@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.3.1
+ - Add button power pin definitions
+
 ## 0.3.0
  - Refactor RUUVI_BOARD -> RB in naming
 

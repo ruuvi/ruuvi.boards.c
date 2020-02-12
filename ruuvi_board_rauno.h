@@ -75,7 +75,9 @@
 #define RB_LED_STATUS_OK             RB_LED_1
 #define RB_LED_STATUS_ERROR          RB_LED_RED
 
-#define RB_BUTTON_PWR                RB_PORT_PIN_MAP(0, 22)
+#define RB_BUTTON_PWR_PIN_NUMBER     1
+#define RB_BUTTON_PWR_1              RB_PORT_PIN_MAP(0, 22)
+#define RB_BUTTON_PWR_PINS           { RB_BUTTON_PWR_1 }
 #define RB_BUTTONS_NUMBER            1
 #define RB_BUTTON_1                  RB_PORT_PIN_MAP(0, 19)
 #define RB_BUTTON_2                  RB_PORT_PIN_MAP(0, 23)
