@@ -10,7 +10,7 @@
 #ifndef RUUVI_BOARDS_H
 #define RUUVI_BOARDS_H
 
-#define RUUVI_BOARDS_SEMVER "0.3.2"
+#define RUUVI_BOARDS_SEMVER "0.3.3"
 /** @brief Port+pin definition for GPIO pin. */
 #define RB_PORT_PIN_MAP(PORT, PIN) ((PORT<<8) + (PIN))
 /** @brief Pin not in use on this board. */
@@ -18,6 +18,9 @@
 
 #ifdef BOARD_PROPRIETARY
   #include "proprietary_board.h"
+#endif
+#ifdef BOARD_RAUNO
+  #include "ruuvi_board_rauno.h"
 #endif
 #ifdef BOARD_RUUVITAG_B
   #include "ruuvi_board_ruuvitag_b.h"
