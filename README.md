@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.3.4
+ - Add Rauno to inclusion list
+
 ## 0.3.3
  - Add Rauno to inclusion list
 
