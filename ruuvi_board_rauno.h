@@ -68,7 +68,7 @@
 
 #define RB_LEDS_NUMBER               1
 #define RB_LED_1                     RB_PORT_PIN_MAP(0, 20)
-#define RB_LEDS_ACTIVE_STATE         { 1 }
+#define RB_LEDS_ACTIVE_STATE         { 0 }
 #define RB_LEDS_LIST                 { RB_LED_1 }
 #define RB_LED_RED                   RB_LED_1
 #define RB_LED_ACTIVITY              RB_LED_1
