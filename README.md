@@ -14,7 +14,7 @@ BSD-3
 
 # Changelog
 ## 0.3.4
- - Add Rauno to inclusion list
+ - Fix Rauno LED polarity
 
 ## 0.3.3
  - Add Rauno to inclusion list
