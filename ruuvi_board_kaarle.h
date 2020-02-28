@@ -78,7 +78,7 @@
 
 // Button definitions
 #define RB_BUTTONS_NUMBER            0
-#define RB_BUTTONS_ACTIVE_STATE      0
+#define RB_BUTTONS_ACTIVE_STATE      {  }
 #define RB_BUTTONS_LIST              {  }
 #define RB_BUTTON_DEBOUNCE_PERIOD_MS 0
 

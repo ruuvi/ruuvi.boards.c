@@ -81,7 +81,7 @@
 // Button definitions for RuuviTag B
 #define RB_BUTTONS_NUMBER            1
 #define RB_BUTTON_1                  RB_PORT_PIN_MAP(0, 13)
-#define RB_BUTTONS_ACTIVE_STATE      0
+#define RB_BUTTONS_ACTIVE_STATE      { 0 }
 #define RB_BUTTONS_LIST              { RB_BUTTON_1 }
 #define RB_BUTTON_DEBOUNCE_PERIOD_MS 50
 
