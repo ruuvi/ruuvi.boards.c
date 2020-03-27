@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.5.0
+ - Use fixed `0` as button, led active state on bootloader glue logic
+
 ## 0.4.0
  - Convert active states to arrays on Kaarle, Kalervo
 

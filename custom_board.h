@@ -15,13 +15,13 @@
 
 // Glue logic for Nordic SDK BSP package
 #define BUTTON_PULL          NRF_GPIO_PIN_PULLUP
-#define BUTTONS_NUMBER       RUUVI_BOARD_BUTTONS_NUMBER
-#define BUTTONS_ACTIVE_STATE RUUVI_BOARD_BUTTONS_ACTIVE_STATE
-#define BUTTONS_LIST         RUUVI_BOARD_BUTTONS_LIST
+#define BUTTONS_NUMBER       RB_BUTTONS_NUMBER
+#define BUTTONS_ACTIVE_STATE 0 // BSP doesn't accept list.
+#define BUTTONS_LIST         RB_BUTTONS_LIST
 
-#define LEDS_NUMBER          RUUVI_BOARD_LEDS_NUMBER
-#define LEDS_ACTIVE_STATE    RUUVI_BOARD_LEDS_ACTIVE_STATE
-#define LEDS_LIST            RUUVI_BOARD_LEDS_LIST
+#define LEDS_NUMBER          RB_LEDS_NUMBER
+#define LEDS_ACTIVE_STATE    0 // BSP doesn't accept list.
+#define LEDS_LIST            RB_LEDS_LIST
 
 
 #endif
