@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.5.0 
+ - Add support for PCA10040, PCA10056E, RuuviGW nRF
+
 ## 0.4.0
  - Convert active states to arrays on Kaarle, Kalervo
 
