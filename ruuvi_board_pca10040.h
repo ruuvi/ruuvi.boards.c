@@ -110,13 +110,20 @@
 #define RB_I2C_FREQUENCY_400k        2
 #define RB_I2C_FREQ                  RB_I2C_FREQUENCY_100k
 
-// UART definitions for PCA10040
+// UART definitions for PCA10040 - external pinheader
 #define RB_UART_TX_PIN               RB_PORT_PIN_MAP(0, 12)
 #define RB_UART_RX_PIN               RB_PORT_PIN_MAP(0, 11)
 #define RB_UART_CTS_PIN              RB_PIN_UNUSED
 #define RB_UART_RTS_PIN              RB_PIN_UNUSED
 #define RB_HWFC_ENABLED              0
 #define RB_PARITY_ENABLED            0
+// UART definitions for PCA10040 - Interface MCU USB/UART
+#define RB_UART_USB_TX_PIN           RB_PORT_PIN_MAP(0, 6)
+#define RB_UART_USB_RX_PIN           RB_PORT_PIN_MAP(0, 8)
+#define RB_UART_USB_CTS_PIN          RB_PORT_PIN_MAP(0, 7)
+#define RB_UART_USB_RTS_PIN          RB_PORT_PIN_MAP(0, 5)
+#define RB_UART_USB_HWFC_ENABLED     1
+#define RB_UART_USB_PARITY_ENABLED   0
 #define RB_UART_BAUDRATE_9600        0
 #define RB_UART_BAUDRATE_115200      1
 #define RB_UART_BAUDRATE             RB_UART_BAUDRATE_115200
