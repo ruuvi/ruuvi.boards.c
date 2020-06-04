@@ -66,15 +66,24 @@
 #define RB_BLE_2MBPS_SUPPORTED     1
 #define RB_BLE_CODED_SUPPORTED     1
 
+// PA/LNA definitions
+#define RB_PA_ENABLED 1
+#define RB_PA_CRX_PIN RB_PORT_PIN_MAP(0, 23)
+#define RB_PA_CRX_TX_MODE 0
+#define RB_PA_CRX_RX_MODE 1
+#define RB_PA_CSD_PIN RB_PORT_PIN_MAP(0, 22)
+#define RB_PA_CSD_ACTIVE 1
+#define RB_PA_CSD_SLEEP  0
+
 // LED definitions
 #define RB_LEDS_NUMBER               1
-#define RB_LED_1                     RB_PORT_PIN_MAP(0, 25)
+#define RB_LED_1                     RB_PORT_PIN_MAP(0, 13)
 #define RB_LEDS_ACTIVE_STATE         { 1 }
 #define RB_LEDS_LIST                 { RB_LED_1 }
-#define RB_LED_RED                   RB_LED_1
+#define RB_LED_GREEN                 RB_LED_1
 #define RB_LED_ACTIVITY              RB_LED_1
 #define RB_LED_STATUS_OK             RB_LED_1
-#define RB_LED_STATUS_ERROR          RB_LED_RED
+#define RB_LED_STATUS_ERROR          RB_LED_1
 
 // Button definitions
 #define RB_BUTTONS_NUMBER            0
@@ -100,6 +109,17 @@
 #define RB_I2C_FREQUENCY_250k        1
 #define RB_I2C_FREQUENCY_400k        2
 #define RB_I2C_FREQ                  RB_I2C_FREQUENCY_250k
+
+// UART definitions
+#define RB_UART_TX_PIN               RB_PORT_PIN_MAP(0, 9)
+#define RB_UART_RX_PIN               RB_PORT_PIN_MAP(0, 10)
+#define RB_UART_CTS_PIN              RB_PIN_UNUSED
+#define RB_UART_RTS_PIN              RB_PIN_UNUSED
+#define RB_HWFC_ENABLED              0
+#define RB_PARITY_ENABLED            0
+#define RB_UART_BAUDRATE_9600        0
+#define RB_UART_BAUDRATE_115200      1
+#define RB_UART_BAUDRATE             RB_UART_BAUDRATE_115200
 
 // GPIO definitions
 #define RB_GPIO_NUMBER  32
