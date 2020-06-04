@@ -20,7 +20,7 @@ BSD-3
  - Add support for PCA10040, PCA10056E, RuuviGW nRF
 
 ## 0.5.0 
- - Add support Bootlaoder BSP glue logic
+ - Add support Bootloader BSP glue logic
 
 ## 0.4.0
  - Convert active states to arrays on Kaarle, Kalervo
