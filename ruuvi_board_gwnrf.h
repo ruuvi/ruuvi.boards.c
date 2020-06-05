@@ -40,6 +40,7 @@
 #ifndef RUUVI_BOARD_GWNRF_H
 #define RUUVI_BOARD_GWNRF_H
 #include "ruuvi_boards.h"
+#include "ruuvi_board_gateway.h"
 // Radio / BLE definitions
 #define RB_MODEL_STRING        "RuuviGW"
 #define RB_MANUFACTURER_STRING "Ruuvi Innovations Ltd"
@@ -61,19 +62,19 @@
                                     RB_TX_POWER_5 \\
                                     RB_TX_POWER_6 \\
                                     RB_TX_POWER_7 }
-#define RB_TX_POWER_MIN     RB_TX_POWER_0
-#define RB_TX_POWER_MAX     RB_TX_POWER_7
-#define RB_BLE_2MBPS_SUPPORTED     1
-#define RB_BLE_CODED_SUPPORTED     1
+#define RB_TX_POWER_MIN             RB_TX_POWER_0
+#define RB_TX_POWER_MAX             RB_TX_POWER_7
+#define RB_BLE_2MBPS_SUPPORTED      1
+#define RB_BLE_CODED_SUPPORTED      1
 
 // PA/LNA definitions
-#define RB_PA_ENABLED 1
-#define RB_PA_CRX_PIN RB_PORT_PIN_MAP(0, 23)
+#define RB_PA_ENABLED     1
+#define RB_PA_CRX_PIN     RB_PORT_PIN_MAP(0, 23)
 #define RB_PA_CRX_TX_MODE 0
 #define RB_PA_CRX_RX_MODE 1
-#define RB_PA_CSD_PIN RB_PORT_PIN_MAP(0, 22)
-#define RB_PA_CSD_ACTIVE 1
-#define RB_PA_CSD_SLEEP  0
+#define RB_PA_CSD_PIN     RB_PORT_PIN_MAP(0, 22)
+#define RB_PA_CSD_ACTIVE  1
+#define RB_PA_CSD_SLEEP   0
 
 // LED definitions
 #define RB_LEDS_NUMBER               1
@@ -91,61 +92,59 @@
 #define RB_BUTTONS_LIST              {  }
 #define RB_BUTTON_DEBOUNCE_PERIOD_MS 0
 
+// Ruuvi Connector Bus
+#define RB_RBUS_1                    RB_PORT_PIN_MAP(0, 2)
+#define RB_RBUS_2                    RB_PORT_PIN_MAP(0, 3)
+#define RB_RBUS_3                    RB_PORT_PIN_MAP(0, 4)
+#define RB_RBUS_4                    RB_PORT_PIN_MAP(0, 5)
+#define RB_RBUS_5                    RB_PORT_PIN_MAP(0, 6)
+#define RB_RBUS_6                    RB_PORT_PIN_MAP(0, 7)
+
+// Bus to ESP32
+#define RB_GWBUS_1                   RB_PORT_PIN_MAP(0, 11)
+#define RB_GWBUS_2                   RB_PORT_PIN_MAP(0, 12)
+#define RB_GWBUS_3                   RB_PORT_PIN_MAP(0, 31) // ESP input only
+#define RB_GWBUS_4                   RB_PORT_PIN_MAP(0, 30) // ESP input only
+#define RB_GWBUS_5                   RB_PORT_PIN_MAP(0, 29) // ESP input only
+
 // SPI definitions
-#define RB_SPI_SCLK_PIN              RB_PORT_PIN_MAP(0, 29) // SPI clock GPIO pin number.
-#define RB_SPI_MOSI_PIN              RB_PORT_PIN_MAP(0, 26) // SPI Master Out Slave In GPIO pin number.
-#define RB_SPI_MISO_PIN              RB_PORT_PIN_MAP(0, 27) // SPI Master In Slave Out GPIO pin number.
-#define RB_SPI_SS_LIST               { }
+#define RB_SPI_ENABLED               0
+#define RB_SPI_SCLK_PIN              RB_RBUS_1
+#define RB_SPI_MOSI_PIN              RB_RBUS_3
+#define RB_SPI_MISO_PIN              RB_RBUS_2
+#define RB_SPI_SS_LIST               { RB_RBUS_4 }
 #define RB_SPI_FREQUENCY_1M          0
 #define RB_SPI_FREQUENCY_2M          1
 #define RB_SPI_FREQUENCY_4M          2
 #define RB_SPI_FREQUENCY_8M          3
-#define RB_SPI_FREQ                  RB_SPI_FREQUENCY_8M
+#define RB_SPI_FREQ                  RB_SPI_FREQUENCY_1M
 
 // I2C definitions
-#define RB_I2C_SDA_PIN               RB_PORT_PIN_MAP(0, 8)
-#define RB_I2C_SCL_PIN               RB_PORT_PIN_MAP(0, 5)
+#define RB_I2C_SDA_PIN               RB_RBUS_1
+#define RB_I2C_SCL_PIN               RB_RBUS_2
 #define RB_I2C_FREQUENCY_100k        0
 #define RB_I2C_FREQUENCY_250k        1
 #define RB_I2C_FREQUENCY_400k        2
-#define RB_I2C_FREQ                  RB_I2C_FREQUENCY_250k
+#define RB_I2C_FREQ                  RB_I2C_FREQUENCY_100k
 
 // UART definitions
-#define RB_UART_TX_PIN               RB_PORT_PIN_MAP(0, 9)
-#define RB_UART_RX_PIN               RB_PORT_PIN_MAP(0, 10)
-#define RB_UART_CTS_PIN              RB_PIN_UNUSED
-#define RB_UART_RTS_PIN              RB_PIN_UNUSED
-#define RB_HWFC_ENABLED              0
-#define RB_PARITY_ENABLED            0
-#define RB_UART_BAUDRATE_9600        0
-#define RB_UART_BAUDRATE_115200      1
-#define RB_UART_BAUDRATE             RB_UART_BAUDRATE_115200
+#define RB_UART_CTS_PIN              RB_UART_ESP_RTS
+#define RB_UART_RTS_PIN              RB_UART_ESP_CTS
+#define RB_UART_TX_PIN               RB_UART_NRF2ESP
+#define RB_UART_RX_PIN               RB_UART_ESP2NRF
 
 // GPIO definitions
-#define RB_GPIO_NUMBER  32
+#define RB_GPIO_NUMBER               32
+
 
 // Peripherals
-#define RB_DCDC_INTERNAL_INSTALLED 1
-#define RB_NFC_INTERNAL_INSTALLED  0
-#define RB_APP_FLASH_SIZE          0x0000 //!< Bytes
-#define RB_APP_PAGES               0      //!< Erase units
-#define RB_RTC_INSTANCES           2
-#define RB_FPU_ENABLED             0      //!< HW Floating Point Unit
+#define RB_DCDC_INTERNAL_INSTALLED   1
+#define RB_NFC_INTERNAL_INSTALLED    0
+#define RB_APP_FLASH_SIZE            0x0000 //!< Bytes
+#define RB_APP_PAGES                 0      //!< Erase units
+#define RB_RTC_INSTANCES             2
+#define RB_FPU_ENABLED               0      //!< HW Floating Point Unit
 
-// Available sensors
-#define RB_ENVIRONMENTAL_BME280_PRESENT   0
-#define RB_ENVIRONMENTAL_BME280_SPI_USE   0
-#define RB_ENVIRONMENTAL_BME280_I2C_USE   0
-#define RB_BME280_I2C_ADDRESS             0x76 //!< Depends on SDO pin setting, LOW 0x76 HIGH 0x77
-#define RB_ENVIRONMENTAL_MCU_PRESENT      1
-#define RB_ENVIRONMENTAL_SHTCX_PRESENT    0    
-#define RB_SHTCX_I2C_ADDRESS              0x70 //!< Static
-#define RB_ENVIRONMENTAL_SHT3_PRESENT     0    
-#define RB_SHT3_I2C_ADDRESS               0x44 //!< 0x44-45 depending on ADDR pin  
-#define RB_ENVIRONMENTAL_TMP117_PRESENT   0
-#define RB_TMP117_I2C_ADDRESS             0x90 //!< 0x90-93 depending on ADD0 pin
-#define RB_ACCELEROMETER_LIS2DH12_PRESENT 0
-#define RB_ACCELEROMETER_LIS2DH12_SPI_USE 0
-#define RB_ACCELEROMETER_LIS2DH12_I2C_USE 0
+#define RB_ENVIRONMENTAL_MCU_PRESENT 1
 
 #endif
