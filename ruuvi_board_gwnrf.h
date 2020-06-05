@@ -37,8 +37,8 @@
  * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#ifndef RUUVI_BOARD_KEIJO_H
-#define RUUVI_BOARD_KEIJO_H
+#ifndef RUUVI_BOARD_GWNRF_H
+#define RUUVI_BOARD_GWNRF_H
 #include "ruuvi_boards.h"
 // Radio / BLE definitions
 #define RB_MODEL_STRING        "RuuviGW"
