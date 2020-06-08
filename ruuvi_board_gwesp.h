@@ -11,7 +11,7 @@
  */
 
 #include "ruuvi_boards.h"
-#include "ruuvi_gateway.h"
+#include "ruuvi_board_gateway.h"
 
 // Bus to NRF52
 #define RB_GWBUS_1 GPIO_NUM_5
