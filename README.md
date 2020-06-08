@@ -13,6 +13,10 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.7.0
+ - Support using repository as ESP component
+ - Add ESP GW pin definitions
+
 ## 0.6.2
  - Add support for PA/LNA on Gateway 
 
