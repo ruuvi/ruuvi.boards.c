@@ -148,4 +148,3 @@
 #define RB_ENVIRONMENTAL_MCU_PRESENT 1
 
 #endif
-                                    
