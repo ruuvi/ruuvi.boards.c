@@ -66,6 +66,15 @@
 #define RB_BLE_2MBPS_SUPPORTED     1
 #define RB_BLE_CODED_SUPPORTED     0
 
+#define RB_AIN0                     1
+#define RB_AIN1                     (RB_AIN0 + 1)  
+#define RB_AIN2                     (RB_AIN1 + 1)    
+#define RB_AIN3                     (RB_AIN2 + 1)    
+#define RB_AIN4                     (RB_AIN3 + 1)   
+#define RB_AIN5                     (RB_AIN4 + 1)    
+#define RB_AIN6                     (RB_AIN5 + 1)   
+#define RB_AIN7                     (RB_AIN6 + 1)                            
+
 // LED definitions for PCA10040
 #define RB_LEDS_NUMBER               4
 #define RB_LED_1                     RB_PORT_PIN_MAP(0, 17)
@@ -110,20 +119,13 @@
 #define RB_I2C_FREQUENCY_400k        2
 #define RB_I2C_FREQ                  RB_I2C_FREQUENCY_100k
 
-// UART definitions for PCA10040 - external pinheader
+// UART definitions for PCA10040
 #define RB_UART_TX_PIN               RB_PORT_PIN_MAP(0, 12)
 #define RB_UART_RX_PIN               RB_PORT_PIN_MAP(0, 11)
 #define RB_UART_CTS_PIN              RB_PIN_UNUSED
 #define RB_UART_RTS_PIN              RB_PIN_UNUSED
 #define RB_HWFC_ENABLED              0
 #define RB_PARITY_ENABLED            0
-// UART definitions for PCA10040 - Interface MCU USB/UART
-#define RB_UART_USB_TX_PIN           RB_PORT_PIN_MAP(0, 6)
-#define RB_UART_USB_RX_PIN           RB_PORT_PIN_MAP(0, 8)
-#define RB_UART_USB_CTS_PIN          RB_PORT_PIN_MAP(0, 7)
-#define RB_UART_USB_RTS_PIN          RB_PORT_PIN_MAP(0, 5)
-#define RB_UART_USB_HWFC_ENABLED     1
-#define RB_UART_USB_PARITY_ENABLED   0
 #define RB_UART_BAUDRATE_9600        0
 #define RB_UART_BAUDRATE_115200      1
 #define RB_UART_BAUDRATE             RB_UART_BAUDRATE_115200
@@ -154,5 +156,12 @@
 #define RB_ACCELEROMETER_LIS2DH12_PRESENT 0
 #define RB_ACCELEROMETER_LIS2DH12_SPI_USE 0
 #define RB_ACCELEROMETER_LIS2DH12_I2C_USE 0
-
+#define RB_ENVIRONMENTAL_PHOTO_PRESENT    1
+#define RB_PHOTO_ACTIVE                   1                       // NTC active state
+#define RB_PHOTO_PWR_PIN                  RB_PORT_PIN_MAP(0, 6)   //!< Photodiode power pin
+#define RB_PHOTO_ADC                      RB_AIN6                 //!< Photodiode ADC
+#define RB_ENVIRONMENTAL_NTC_PRESENT      1
+#define RB_NTC_ACTIVE                     1                       // NTC active state
+#define RB_NTC_PWR_PIN                    RB_PORT_PIN_MAP(0, 6)   //!< NTC power pin
+#define RB_NTC_ADC                        RB_AIN1                 //!< NTC ADC
 #endif
