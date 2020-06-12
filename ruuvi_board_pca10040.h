@@ -67,13 +67,13 @@
 #define RB_BLE_CODED_SUPPORTED     0
 
 #define RB_AIN0                     1
-#define RB_AIN1                     (RB_AIN0 + 1)  
-#define RB_AIN2                     (RB_AIN1 + 1)    
-#define RB_AIN3                     (RB_AIN2 + 1)    
-#define RB_AIN4                     (RB_AIN3 + 1)   
-#define RB_AIN5                     (RB_AIN4 + 1)    
-#define RB_AIN6                     (RB_AIN5 + 1)   
-#define RB_AIN7                     (RB_AIN6 + 1)                            
+#define RB_AIN1                     (RB_AIN0 + 1)
+#define RB_AIN2                     (RB_AIN1 + 1)
+#define RB_AIN3                     (RB_AIN2 + 1)
+#define RB_AIN4                     (RB_AIN3 + 1)
+#define RB_AIN5                     (RB_AIN4 + 1)
+#define RB_AIN6                     (RB_AIN5 + 1)
+#define RB_AIN7                     (RB_AIN6 + 1)
 
 // LED definitions for PCA10040
 #define RB_LEDS_NUMBER               4
