@@ -25,7 +25,6 @@
 #define TXD_PIN    RB_UART_ESP2NRF
 #define RXD_PIN    RB_UART_NRF2ESP
 
-// LNA control pin
-#define BUTTON_RESET_PIN GPIO_NUM_35
+#define RB_BUTTON_RESET_PIN GPIO_NUM_35 //!< Reset button control
 
 #endif
