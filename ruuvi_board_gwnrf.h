@@ -68,13 +68,10 @@
 #define RB_BLE_CODED_SUPPORTED      (1U) //!< HW can use Long Range modulation.
 
 // PA/LNA definitions
-#define RB_PA_ENABLED     (1U) //!< PA/LNA available.
-#define RB_PA_CRX_PIN     RB_PORT_PIN_MAP(0U, 23U) //!< RX mode select pin of PA/LNA.
-#define RB_PA_CRX_TX_MODE (0U) //!< PA/LNA is in TX mode when GPIO is low.
-#define RB_PA_CRX_RX_MODE (1U) //!< PA/LNA is in RX mode when GPIO is high.
 #define RB_PA_CSD_PIN     RB_PORT_PIN_MAP(0U, 22U) //!< Power mode pin of PA/LNA.
 #define RB_PA_CSD_ACTIVE  (1U) //!< PA/LNA is active when CSD is high.
 #define RB_PA_CSD_SLEEP   (0U) //!< PA/LNA is sleeping when CSD is low. 
+
 
 // LED definitions
 #define RB_LEDS_NUMBER               (1U)
@@ -106,6 +103,7 @@
 #define RB_GWBUS_3                   RB_PORT_PIN_MAP(0U, 31U) // ESP input only
 #define RB_GWBUS_4                   RB_PORT_PIN_MAP(0U, 30U) // ESP input only
 #define RB_GWBUS_5                   RB_PORT_PIN_MAP(0U, 29U) // ESP input only
+#define RB_GWBUS_LNA                 RB_PORT_PIN_MAP(0U, 23U) //!< RX mode select pin.
 
 // SPI definitions
 #define RB_SPI_ENABLED               (0U)

@@ -14,13 +14,18 @@
 #include "ruuvi_board_gateway.h"
 
 // Bus to NRF52
-#define RB_GWBUS_1 GPIO_NUM_5
-#define RB_GWBUS_2 GPIO_NUM_17
-#define RB_GWBUS_3 GPIO_NUM_36
-#define RB_GWBUS_4 GPIO_NUM_37
-#define RB_GWBUS_5 GPIO_NUM_38
+#define RB_GWBUS_1   GPIO_NUM_5
+#define RB_GWBUS_2   GPIO_NUM_17
+#define RB_GWBUS_3   GPIO_NUM_36
+#define RB_GWBUS_4   GPIO_NUM_37
+#define RB_GWBUS_5   GPIO_NUM_38
+#define RB_GWBUS_LNA GPIO_NUM_4
 
+// UART to nRF52
 #define TXD_PIN    RB_UART_ESP2NRF
 #define RXD_PIN    RB_UART_NRF2ESP
+
+// LNA control pin
+#define BUTTON_RESET_PIN GPIO_NUM_35
 
 #endif
