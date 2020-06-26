@@ -98,7 +98,7 @@
 #define RB_SPI_MISO_PIN              RB_PORT_PIN_MAP(0U, 27U) // SPI Master In Slave Out GPIO pin number.
 #define RB_SPI_SS_ACCELEROMETER_PIN  RB_PORT_PIN_MAP(0U, 28U)  // SPI Slave Select (accelerometer)
 #define RB_SPI_SS_LIST               {RB_SPI_SS_ACCELEROMETER_PIN}
-#define RB_SPI_SS_NUMBER             {1U}
+#define RB_SPI_SS_NUMBER             (1U)
 #define RB_SPI_FREQUENCY_1M          (0U)
 #define RB_SPI_FREQUENCY_2M          (1U)
 #define RB_SPI_FREQUENCY_4M          (2U)
