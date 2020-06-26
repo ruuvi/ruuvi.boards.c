@@ -18,30 +18,24 @@
 
 #ifdef BOARD_PROPRIETARY
 #   include "proprietary_board.h"
-#endif
-#ifdef BOARD_RAUNO
+#elif defined BOARD_RAUNO
 #   include "ruuvi_board_rauno.h"
-#endif
-#ifdef BOARD_RUUVITAG_B
+#elif defined BOARD_RUUVITAG_B
 #   include "ruuvi_board_ruuvitag_b.h"
-#endif
-#ifdef BOARD_KAARLE
+#elif defined BOARD_KAARLE
 #   include "ruuvi_board_kaarle.h"
-#endif
-#ifdef BOARD_KALERVO
+#elif defined BOARD_KALERVO
 #   include "ruuvi_board_kalervo.h"
-#endif
-#ifdef BOARD_KEIJO
+#elif defined BOARD_KEIJO
 #   include "ruuvi_board_keijo.h"
-#endif
-#ifdef BOARD_PCA10040
+#elif defined BOARD_PCA10040
 #   include "ruuvi_board_pca10040.h"
-#endif
-#ifdef BOARD_PCA10056E
+#elif defined BOARD_PCA10056E
 #   include "ruuvi_board_pca10056e.h"
-#endif
-#ifdef BOARD_RUUVIGW_NRF
+#elif defined BOARD_RUUVIGW_NRF
 #   include "ruuvi_board_gwnrf.h"
+#else
+#   error "Define your board in preprocessor"
 #endif
 
 #endif

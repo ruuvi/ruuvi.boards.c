@@ -117,7 +117,7 @@
 #define RB_NTC_ADC       RB_AIN1                 // NTC ADC
 #define RB_LIST          { RB_PHOTO_ADC, \\
                                     RB_NTC_ADC,   \\
-                                    RB_AINVDD }           // List of ADC pins to measure
+                                    RB_AINVDD }  // List of ADC pins to measure
 
 // Peripherals
 #define RB_DCDC_INTERNAL_INSTALLED 1
