@@ -10,7 +10,7 @@
 #ifndef RUUVI_BOARDS_H
 #define RUUVI_BOARDS_H
 
-#define RUUVI_BOARDS_SEMVER "0.7.0"
+#define RUUVI_BOARDS_SEMVER "0.7.1"
 /** @brief Port+pin definition for GPIO pin. */
 #define RB_PORT_PIN_MAP(PORT, PIN) (((PORT) << 8U) + (PIN))
 /** @brief Pin not in use on this board. */
@@ -37,5 +37,7 @@
 #else
 #   error "Define your board in preprocessor"
 #endif
+
+#include "ruuvi_board_defaults.h"
 
 #endif

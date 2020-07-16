@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.7.1
+ - Add default definitions
+
 ## 0.7.0
  - Support using repository as ESP component
  - Add ESP GW pin definitions
