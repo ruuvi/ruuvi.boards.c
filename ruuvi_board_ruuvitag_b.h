@@ -155,8 +155,9 @@
  * the assignment is possible only in one way. 
  */ 
 #if RB_ACCELEROMETER_LIS2DH12_PRESENT
-#define RB_INT_LEVEL_PIN RB_INT_ACC1_PIN
-#define RB_INT_FIFO_PIN  RB_INT_ACC2_PIN
+#define RB_INT_LEVEL_PIN RB_INT_ACC2_PIN
+#define RB_INT_FIFO_PIN  RB_INT_ACC1_PIN
 #endif
 
 #endif
+                                    

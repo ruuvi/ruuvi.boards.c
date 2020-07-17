@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.7.2
+ - Fix RuuviTag B LIS2 interrupt pins
+
 ## 0.7.1
  - Add default definitions
 
