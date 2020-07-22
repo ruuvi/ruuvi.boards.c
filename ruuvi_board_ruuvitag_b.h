@@ -127,8 +127,8 @@
 // Total number of GPIO pins
 #define RB_GPIO_NUMBER               32
 // GPIO integration test I/O, connect these on devkit or GPIO test fails.
-#define RB_GPIO_TEST_INPUT           RB_PORT_PIN_MAP(0, 13)
-#define RB_GPIO_TEST_OUTPUT          RB_PORT_PIN_MAP(0, 31)
+#define RB_GPIO_TEST_INPUT           RB_PIN_UNUSED
+#define RB_GPIO_TEST_OUTPUT          RB_PIN_UNUSED
 
 // Peripherals
 #define RB_DCDC_INTERNAL_INSTALLED 1
