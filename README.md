@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.8.0
+ - Define available space as "small, medium, large" instead of absolute page number.
+
 ## 0.7.2
  - Fix RuuviTag B LIS2 interrupt pins
 
