@@ -128,8 +128,7 @@
 // Peripherals
 #define RB_DCDC_INTERNAL_INSTALLED 1
 #define RB_NFC_INTERNAL_INSTALLED  0
-#define RB_APP_FLASH_SIZE          0x0000 //!< Bytes
-#define RB_APP_PAGES               0      //!< Erase units
+#define RB_FLASH_SPACE_AVAILABLE   RB_FLASH_SPACE_SMALL
 #define RB_RTC_INSTANCES           2
 #define RB_FPU_ENABLED             0      //!< HW Floating Point Unit
 
