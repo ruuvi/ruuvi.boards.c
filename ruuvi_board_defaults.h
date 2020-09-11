@@ -110,6 +110,9 @@
 #ifndef RB_LED_BUTTON_PRESS
 #   define RB_LED_BUTTON_PRESS          RB_PIN_UNUSED
 #endif
+#ifndef RB_LED_CONFIG_ENABLED
+#   define RB_LED_CONFIG_ENABLED        RB_PIN_UNUSED
+#endif
 
 // Button defaults
 #ifndef RB_BUTTON_PWR_PIN_NUMBER
