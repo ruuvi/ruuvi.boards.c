@@ -13,6 +13,10 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 0.8.1
+ - Add definitions for button actions, e.g. enable_configuration, change_mode.
+ - Add led state indication definitions, e.g. button_pressed.
+
 ## 0.8.0
  - Define available space as "small, medium, large" instead of absolute page number.
 

@@ -77,6 +77,8 @@
 #define RB_LED_ACTIVITY              RB_LED_GREEN
 #define RB_LED_STATUS_OK             RB_LED_GREEN
 #define RB_LED_STATUS_ERROR          RB_LED_RED
+#define RB_LED_BUTTON_PRESS          RB_LED_GREEN
+#define RB_LED_CONFIG_ENABLED        RB_LED_RED
 
 // Button definitions for RuuviTag B
 #define RB_BUTTON_PWR_PIN_NUMBER     0
@@ -86,6 +88,7 @@
 #define RB_BUTTONS_ACTIVE_STATE      { 0 }
 #define RB_BUTTONS_LIST              { RB_BUTTON_1 }
 #define RB_BUTTON_DEBOUNCE_PERIOD_MS 50
+#define RB_BUTTON_ENABLE_CONFIG      RB_BUTTON_1
 
 // SPI definitions for RuuviTag B
 #define RB_SPI_SCLK_PIN              RB_PORT_PIN_MAP(0, 29) // SPI clock GPIO pin number.

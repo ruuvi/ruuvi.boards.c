@@ -88,7 +88,7 @@
 #   define RB_BLE_CODED_SUPPORTED     0
 #endif
 
-// LED definitions for RuuviTag B
+// LED defaults
 #ifndef RB_LEDS_NUMBER
 #   define RB_LEDS_NUMBER               0
 #endif
@@ -107,8 +107,11 @@
 #ifndef RB_LED_STATUS_ERROR
 #   define RB_LED_STATUS_ERROR          RB_PIN_UNUSED
 #endif
+#ifndef RB_LED_BUTTON_PRESS
+#   define RB_LED_BUTTON_PRESS          RB_PIN_UNUSED
+#endif
 
-// Button definitions for RuuviTag B
+// Button defaults
 #ifndef RB_BUTTON_PWR_PIN_NUMBER
 #   define RB_BUTTON_PWR_PIN_NUMBER     0
 #endif
@@ -127,8 +130,14 @@
 #ifndef RB_BUTTON_DEBOUNCE_PERIOD_MS
 #   define RB_BUTTON_DEBOUNCE_PERIOD_MS 50
 #endif
+#ifndef RB_BUTTON_ENABLE_CONFIG
+#   define RB_BUTTON_ENABLE_CONFIG      RB_PIN_UNUSED
+#endif
+#ifndef RB_BUTTON_CHANGE_MODE
+#   define RB_BUTTON_CHANGE_MODE        RB_PIN_UNUSED
+#endif
 
-// SPI definitions for RuuviTag B
+// SPI defaults
 #ifndef RB_SPI_SCLK_PIN
 #   define RB_SPI_SCLK_PIN              RB_PIN_UNUSED
 #endif
@@ -166,7 +175,7 @@
 #   define RB_SPI_FREQ                  RB_SPI_FREQUENCY_1M
 #endif
 
-// I2C definitions for RuuviTag B
+// I2C defaults
 #ifndef RB_I2C_SDA_PIN
 #   define RB_I2C_SDA_PIN               RB_PORT_PIN_MAP(0, 4)
 #endif
@@ -186,7 +195,7 @@
 #   define RB_I2C_FREQ                  RB_I2C_FREQUENCY_100k
 #endif
 
-// UART definitions for RuuviTag B
+// UART defaults
 #ifndef RB_UART_TX_PIN
 #   define RB_UART_TX_PIN               RB_PIN_UNUSED
 #endif
@@ -215,7 +224,7 @@
 #   define RB_UART_BAUDRATE             RB_UART_BAUDRATE_115200
 #endif
 
-// Interrupt definitions for RuuviTag B
+// Interrupt defaults
 #ifndef RB_INT_ACC1_PIN
 #   define RB_INT_ACC1_PIN              RB_PIN_UNUSED
 #endif
@@ -278,7 +287,7 @@
 #   define RB_ENVIRONMENTAL_MCU_PRESENT      0
 #endif
 #ifndef RB_ENVIRONMENTAL_SHTCX_PRESENT
-#   define RB_ENVIRONMENTAL_SHTCX_PRESENT    0    //!< Some boards have both BME280 and SHTCX
+#   define RB_ENVIRONMENTAL_SHTCX_PRESENT    0
 #endif
 #ifndef RB_ACCELEROMETER_LIS2DH12_PRESENT
 #   define RB_ACCELEROMETER_LIS2DH12_PRESENT 0
