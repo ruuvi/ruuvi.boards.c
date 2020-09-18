@@ -40,7 +40,7 @@
 #ifndef RUUVI_BOARD_RUUVITAG_B_H
 #define RUUVI_BOARD_RUUVITAG_B_H
 #include "ruuvi_boards.h"
-#define RB_MODEL_STRING              "RUUVITAG_B"
+#define RB_MODEL_STRING              "RuuviTag B"
 #define RB_MANUFACTURER_STRING       "Ruuvi Innovations Ltd"
 #define RB_BLE_NAME_STRING           "Ruuvi"
 // Radio definitions
