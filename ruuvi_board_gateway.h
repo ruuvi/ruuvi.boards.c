@@ -9,8 +9,6 @@
  * Common definitions for Ruuvi Gateway.
  */
 
-#include "ruuvi_boards.h"
-
 #define RB_UART_NRF2ESP         RB_GWBUS_3    //!< UART NRF -> ESP
 #define RB_UART_ESP2NRF         RB_GWBUS_1    //!< UART ESP -> NRF
 #define RB_UART_ESP_RTS         RB_PIN_UNUSED 
