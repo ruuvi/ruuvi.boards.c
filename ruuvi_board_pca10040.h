@@ -126,6 +126,13 @@
 #define RB_UART_RTS_PIN              RB_PIN_UNUSED
 #define RB_HWFC_ENABLED              0
 #define RB_PARITY_ENABLED            0
+// USB-UART definitions
+#define RB_UART_USB_TX_PIN           RB_PORT_PIN_MAP(0, 6)
+#define RB_UART_USB_RX_PIN           RB_PORT_PIN_MAP(0, 8)
+#define RB_UART_USB_CTS_PIN          RB_PORT_PIN_MAP(0, 7)
+#define RB_UART_USB_RTS_PIN          RB_PORT_PIN_MAP(0, 5)
+#define RB_UART_USB_HWFC_ENABLED     1
+#define RB_UART_USB_PARITY_ENABLED   0
 #define RB_UART_BAUDRATE_9600        0
 #define RB_UART_BAUDRATE_115200      1
 #define RB_UART_BAUDRATE             RB_UART_BAUDRATE_115200
