@@ -13,7 +13,7 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
-## 3.3.0 
+## 3.4.0 
  - Support Gateway A2
 
 ## 0.8.1

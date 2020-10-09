@@ -10,7 +10,7 @@
 #ifndef RUUVI_BOARDS_H
 #define RUUVI_BOARDS_H
 
-#define RUUVI_BOARDS_SEMVER "3.3.0"
+#define RUUVI_BOARDS_SEMVER "3.4.0"
 /** @brief Port+pin definition for GPIO pin. */
 #define RB_PORT_PIN_MAP(PORT, PIN) (((PORT) << 8U) + (PIN))
 /** @brief Pin not in use on this board. */
