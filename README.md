@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 3.3.0 
+ - Support Gateway A2
+
 ## 0.8.1
  - Add definitions for button actions, e.g. enable_configuration, change_mode.
  - Add led state indication definitions, e.g. button_pressed.
