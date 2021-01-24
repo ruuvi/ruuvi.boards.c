@@ -149,6 +149,8 @@
 #define RB_ENVIRONMENTAL_BME280_SPI_USE   1
 #define RB_ENVIRONMENTAL_BME280_I2C_USE   0
 #define RB_BME280_I2C_ADDRESS             0x76 //!< Depends on SDO pin setting, LOW 0x76 HIGH 0x77
+#define RB_ENVIRONMENTAL_DPS310_PRESENT   1
+#define RB_ENVIRONMENTAL_DPS310_SPI_USE   1
 #define RB_ENVIRONMENTAL_MCU_PRESENT      1
 #define RB_ENVIRONMENTAL_SHTCX_PRESENT    1    //!< Some boards have both BME280 and SHTCX
 #define RB_SHTCX_I2C_ADDRESS              0x70 //!< Static

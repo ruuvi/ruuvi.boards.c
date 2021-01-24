@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 3.5.0 
+ - Add DPS310 to RuuviTag
+
 ## 3.4.0 
  - Support Gateway A2
 
