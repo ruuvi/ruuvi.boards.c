@@ -157,6 +157,9 @@
 #define RB_ACCELEROMETER_LIS2DH12_PRESENT 1
 #define RB_ACCELEROMETER_LIS2DH12_SPI_USE 1
 #define RB_ACCELEROMETER_LIS2DH12_I2C_USE 0
+#define RB_ENVIRONMENTAL_TMP117_PRESENT   (1U)
+#define RB_TMP117_I2C_ADDRESS             (0x48U) //!< 0x48-0x4B depending on ADD0 pin
+
 
 /** 
  * This creates a dependency to ruuvi.drivers.c implementation, OTOH on LIS2DH12 
