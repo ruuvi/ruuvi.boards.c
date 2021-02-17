@@ -160,11 +160,13 @@
 #define RB_ENVIRONMENTAL_TMP117_PRESENT   (1U)
 #define RB_TMP117_I2C_ADDRESS             (0x48U) //!< 0x48-0x4B depending on ADD0 pin
 
+#define RB_TMP117_SENSOR_POWER_PIN        RB_PORT_PIN_MAP(0, 12)
+#define RB_SHTCX_SENSOR_POWER_PIN         RB_PORT_PIN_MAP(0, 12)
+#define RB_DPS310_SENSOR_POWER_PIN        RB_PORT_PIN_MAP(0, 7)
+#define RB_LIS2DH12_SENSOR_POWER_PIN      RB_PORT_PIN_MAP(0, 7)
+#define RB_I2C_BUS_POWER_PIN              RB_PORT_PIN_MAP(0, 12)
 
-/** 
- * This creates a dependency to ruuvi.drivers.c implementation, OTOH on LIS2DH12 
- * the assignment is possible only in one way. 
- */ 
+
 #if RB_ACCELEROMETER_LIS2DH12_PRESENT
 #define RB_INT_LEVEL_PIN RB_INT_ACC2_PIN
 #define RB_INT_FIFO_PIN  RB_INT_ACC1_PIN
