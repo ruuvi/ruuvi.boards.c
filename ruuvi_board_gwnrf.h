@@ -75,8 +75,8 @@
 
 // LED definitions
 #define RB_LEDS_NUMBER               (1U)
-#define RB_LED_1                     RB_PORT_PIN_MAP(0U, 13U)
-#define RB_LEDS_ACTIVE_STATE         { 1U }
+#define RB_LED_1                     RB_PORT_PIN_MAP(0U, 17U)
+#define RB_LEDS_ACTIVE_STATE         { 0U }
 #define RB_LEDS_LIST                 { RB_LED_1 }
 #define RB_LED_GREEN                 RB_LED_1
 #define RB_LED_ACTIVITY              RB_LED_1
