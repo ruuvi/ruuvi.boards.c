@@ -98,11 +98,10 @@
 #define RB_RBUS_6                    RB_PORT_PIN_MAP(0U, 7U)
 
 // Bus to ESP32
-#define RB_GWBUS_1                   RB_PORT_PIN_MAP(0U, 11U)
-#define RB_GWBUS_2                   RB_PORT_PIN_MAP(0U, 12U)
-#define RB_GWBUS_3                   RB_PORT_PIN_MAP(0U, 31U) // ESP input only
-#define RB_GWBUS_4                   RB_PORT_PIN_MAP(0U, 30U) // ESP input only
-#define RB_GWBUS_5                   RB_PORT_PIN_MAP(0U, 29U) // ESP input only
+#define RB_GWBUS_1                   RB_PORT_PIN_MAP(0U, 11U) //!< UART ESP -> NRF
+#define RB_GWBUS_2                   RB_PORT_PIN_MAP(0U, 31U) //!< UART NRF -> ESP (ESP input only)
+#define RB_GWBUS_3                   RB_PORT_PIN_MAP(0U, 30U) // ESP input only
+#define RB_GWBUS_4                   RB_PORT_PIN_MAP(0U, 29U) // ESP input only
 #define RB_GWBUS_LNA                 RB_PORT_PIN_MAP(0U, 23U) //!< RX mode select pin.
 
 // SPI definitions

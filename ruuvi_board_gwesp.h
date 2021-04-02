@@ -13,11 +13,10 @@
 #include "ruuvi_board_gateway.h"
 
 // Bus to NRF52
-#define RB_GWBUS_1   GPIO_NUM_5
-#define RB_GWBUS_2   GPIO_NUM_17
-#define RB_GWBUS_3   GPIO_NUM_36
-#define RB_GWBUS_4   GPIO_NUM_37
-#define RB_GWBUS_5   GPIO_NUM_38
+#define RB_GWBUS_1   GPIO_NUM_5     //!< UART ESP -> NRF (ESP: GPIO5)
+#define RB_GWBUS_2   GPIO_NUM_36    //!< UART NRF -> ESP (ESP: SENSOR_VP, input only)
+#define RB_GWBUS_3   GPIO_NUM_37    //!< (ESP: SENSOR_CAPP, input only)
+#define RB_GWBUS_4   GPIO_NUM_38    //!< (ESP: SENSOR_CAPN, input only)
 #define RB_GWBUS_LNA GPIO_NUM_4
 
 // UART to nRF52
