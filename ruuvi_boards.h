@@ -32,6 +32,8 @@
 #   include "ruuvi_board_pca10040.h"
 #elif defined BOARD_PCA10056E
 #   include "ruuvi_board_pca10056e.h"
+#elif defined BOARD_PCA10059
+#   include "ruuvi_board_pca10059.h"
 #elif defined BOARD_RUUVIGW_NRF
 #   include "ruuvi_board_gwnrf.h"
 #elif defined BOARD_RUUVIGW_ESP
