@@ -69,13 +69,13 @@
 #define RB_BLE_CODED_SUPPORTED     1
 
 // LED definitions
-#define RB_LEDS_NUMBER               4
-#define RB_LED_1                     RB_PORT_PIN_MAP(0, 13)
-#define RB_LED_2                     RB_PORT_PIN_MAP(0, 14)
-#define RB_LED_3                     RB_PORT_PIN_MAP(0, 15)
-#define RB_LED_4                     RB_PORT_PIN_MAP(0, 26)
-#define RB_LEDS_ACTIVE_STATE         {0, 0, 0, 0}
-#define RB_LEDS_LIST                 { RB_LED_1, RB_LED_2, RB_LED_3, RB_LED_4 }
+#define RB_LEDS_NUMBER               3
+#define RB_LED_1                     RB_PORT_PIN_MAP(0, 6)
+#define RB_LED_2                     RB_PORT_PIN_MAP(0, 8)
+#define RB_LED_3                     RB_PORT_PIN_MAP(1, 9)
+#define RB_LED_4                     RB_PORT_PIN_MAP(0, 12)
+#define RB_LEDS_ACTIVE_STATE         {0, 0, 0}
+#define RB_LEDS_LIST                 { RB_LED_1, RB_LED_2, RB_LED_4 }
 #define RB_LED_ACTIVITY              RB_LED_1
 #define RB_LED_STATUS_OK             RB_LED_1
 #define RB_LED_STATUS_ERROR          RB_LED_2
@@ -83,19 +83,16 @@
 // Button definitions
 #define RB_BUTTON_PWR_PIN_NUMBER     0
 #define RB_BUTTON_PWR_PINS           {  }
-#define RB_BUTTONS_NUMBER            4
-#define RB_BUTTON_1                  RB_PORT_PIN_MAP(0, 11)
-#define RB_BUTTON_2                  RB_PORT_PIN_MAP(0, 12)
-#define RB_BUTTON_3                  RB_PORT_PIN_MAP(0, 24)
-#define RB_BUTTON_4                  RB_PORT_PIN_MAP(0, 25)
-#define RB_BUTTONS_ACTIVE_STATE      { 0, 0, 0, 0 }
-#define RB_BUTTONS_LIST              { RB_BUTTON_1, RB_BUTTON_2, RB_BUTTON_3, RB_BUTTON_4 }
+#define RB_BUTTONS_NUMBER            1
+#define RB_BUTTON_1                  RB_PORT_PIN_MAP(1, 6)
+#define RB_BUTTONS_ACTIVE_STATE      { 0 }
+#define RB_BUTTONS_LIST              { RB_BUTTON_1 }
 #define RB_BUTTON_DEBOUNCE_PERIOD_MS 50
 
 // SPI definitions
-#define RB_SPI_SCLK_PIN              RB_PORT_PIN_MAP(0, 29) // SPI clock GPIO pin number.
-#define RB_SPI_MOSI_PIN              RB_PORT_PIN_MAP(0, 26) // SPI Master Out Slave In GPIO pin number.
-#define RB_SPI_MISO_PIN              RB_PORT_PIN_MAP(0, 27) // SPI Master In Slave Out GPIO pin number.
+#define RB_SPI_SCLK_PIN              RB_PORT_PIN_MAP(0, 27) // SPI clock GPIO pin number.
+#define RB_SPI_MOSI_PIN              RB_PORT_PIN_MAP(0, 2) // SPI Master Out Slave In GPIO pin number.
+#define RB_SPI_MISO_PIN              RB_PORT_PIN_MAP(0, 26) // SPI Master In Slave Out GPIO pin number.
 #define RB_SPI_SS_LIST               { }
 #define RB_SPI_FREQUENCY_1M          0
 #define RB_SPI_FREQUENCY_2M          1
@@ -104,8 +101,8 @@
 #define RB_SPI_FREQ                  RB_SPI_FREQUENCY_8M
 
 // I2C definitions
-#define RB_I2C_SDA_PIN               RB_PORT_PIN_MAP(0, 8)
-#define RB_I2C_SCL_PIN               RB_PORT_PIN_MAP(0, 5)
+#define RB_I2C_SDA_PIN               RB_PORT_PIN_MAP(0, 26)
+#define RB_I2C_SCL_PIN               RB_PORT_PIN_MAP(0, 4)
 #define RB_I2C_FREQUENCY_100k        0
 #define RB_I2C_FREQUENCY_250k        1
 #define RB_I2C_FREQUENCY_400k        2
@@ -117,7 +114,11 @@
 // Peripherals
 #define RB_DCDC_INTERNAL_INSTALLED 1
 #define RB_NFC_INTERNAL_INSTALLED  0
-#define RB_APP_FLASH_SIZE          0x0000 //!< Bytes
+#define RB_FLASH_PAGE_SIZE         0x1000 //!< Bytes
+#define RB_FLASH_SPACE_SMALL       0      //!< Relative, "conserve all flash you can"
+#define RB_FLASH_SPACE_MEDIUM      1      //!< Relative, "No need to optimize"
+#define RB_FLASH_SPACE_LARGE       2      //!< Relative, "Lots of free storage"
+#define RB_FLASH_SPACE_AVAILABLE   RB_FLASH_SPACE_MEDIUM
 #define RB_APP_PAGES               0      //!< Erase units
 #define RB_RTC_INSTANCES           2
 #define RB_FPU_ENABLED             0      //!< HW Floating Point Unit
