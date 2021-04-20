@@ -64,7 +64,7 @@
 #define RB_TX_POWER_MIN RB_TX_POWER_0
 #define RB_TX_POWER_MAX RB_TX_POWER_7
 #define RB_BLE_2MBPS_SUPPORTED     1
-#define RB_BLE_CODED_SUPPORTED     1
+#define RB_BLE_CODED_SUPPORTED     0
 
 // LED definitions for RuuviTag B
 #define RB_LEDS_NUMBER               2

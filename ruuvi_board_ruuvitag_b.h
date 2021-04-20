@@ -135,12 +135,12 @@
 
 // Peripherals
 #define RB_DCDC_INTERNAL_INSTALLED 1
-#define RB_NFC_INTERNAL_INSTALLED  1
+#define RB_NFC_INTERNAL_INSTALLED  0
 #define RB_FLASH_PAGE_SIZE         0x1000 //!< Bytes
 #define RB_FLASH_SPACE_SMALL       0      //!< Relative, "conserve all flash you can"
 #define RB_FLASH_SPACE_MEDIUM      1      //!< Relative, "No need to optimize"
 #define RB_FLASH_SPACE_LARGE       2      //!< Relative, "Lots of free storage"
-#define RB_FLASH_SPACE_AVAILABLE   RB_FLASH_SPACE_MEDIUM
+#define RB_FLASH_SPACE_AVAILABLE   RB_FLASH_SPACE_SMALL
 #define RB_RTC_INSTANCES           3
 #define RB_FPU_ENABLED             1      //!< HW Floating Point Unit
 
