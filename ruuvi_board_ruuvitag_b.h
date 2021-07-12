@@ -110,7 +110,7 @@
 #define RB_I2C_FREQUENCY_100k        0
 #define RB_I2C_FREQUENCY_250k        1
 #define RB_I2C_FREQUENCY_400k        2
-#define RB_I2C_FREQ                  RB_I2C_FREQUENCY_100k
+#define RB_I2C_FREQ                  RB_I2C_FREQUENCY_400k
 
 // UART definitions for RuuviTag B
 #define RB_UART_TX_PIN               RB_PORT_PIN_MAP(0, 4)
@@ -173,4 +173,3 @@
 #endif
 
 #endif
-                                    
