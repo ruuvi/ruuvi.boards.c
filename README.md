@@ -13,6 +13,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 3.8.0 
+ - Disable TMP, SHT from Keijo to save flash
+
 ## 3.7.0 
  - Add Power pins to RuuviTag and Kalervo
 

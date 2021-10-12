@@ -135,9 +135,9 @@
 #define RB_ENVIRONMENTAL_MCU_PRESENT      (1U)
 #define RB_ENVIRONMENTAL_SHTCX_PRESENT    (1U)    
 #define RB_SHTCX_I2C_ADDRESS              (0x70U) //!< Static
-#define RB_ENVIRONMENTAL_SHT3_PRESENT     (1U)    
+#define RB_ENVIRONMENTAL_SHT3_PRESENT     (0U)    
 #define RB_SHT3_I2C_ADDRESS               (0x44U) //!< 0x44-45 depending on ADDR pin  
-#define RB_ENVIRONMENTAL_TMP117_PRESENT   (1U)
+#define RB_ENVIRONMENTAL_TMP117_PRESENT   (0U)
 #define RB_TMP117_I2C_ADDRESS             (0x90U) //!< 0x90-93 depending on ADD0 pin
 #define RB_ACCELEROMETER_LIS2DH12_PRESENT (1U)
 #define RB_ACCELEROMETER_LIS2DH12_SPI_USE (1U)
