@@ -28,7 +28,7 @@
 #define RUUVI_BOARDS_SEMVER "3.8.0"
 
 
-/** @brief MACRO Port+pin for GPIO pin. */
+/** @brief MACRO Port + Pin for GPIO pin. */
 #define RB_PORT_PIN_MAP(PORT, PIN) (((PORT) << 8u) + (PIN))   // example  2,4   0x0204
 
 /* @brief default all pins unused*/
