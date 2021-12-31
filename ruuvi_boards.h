@@ -1,19 +1,30 @@
 /**
- * Ruuvi board selection header, inspired by Nordic Semiconductor "boards.h" and "custom_board.h"
+ * @file ruuvi_boards.h
+ * @author: Otso Jousimaa <otso@ojousima.net>
+ * @date  2018-07-23
+ * @brief Provide Selection for a single board configuration
+ * @detail For example: from targets/ruuvitag_b/armgcc/Makefile:CFLAGS += -DBOARD_RUUVITAG_B
+ *  Includes definition file ruuvi_board_ruuvitag_b.h.
+ *  Then includes the defaults values, unless already defined in the board specific header.
  *
- * If you wish to compile for your proprietary board, please define BOARD_PROPIETARY in C preprocessor macros.
- * You should also define the board name, for example BOARD_RUUVITAG_B for the preprocessor.
+ *  Inspired by Nordic Semiconductor "boards.h" and "custom_board.h"
  *
- * License: BSD-3
- * Author: Otso Jousimaa <otso@ojousima.net>
+ *  To compile for proprietary board, define BOARD_PROPIETARY in Makefile and
+ *       define the board name, for example BOARD_SEG
+ *
+ *
+ * @copyright Ruuvi Innovations Ltd, 2021, license BSD-3-Clause.
  */
 #ifndef RUUVI_BOARDS_H
 #define RUUVI_BOARDS_H
 
 #define RUUVI_BOARDS_SEMVER "3.8.0"
-/** @brief Port+pin definition for GPIO pin. */
-#define RB_PORT_PIN_MAP(PORT, PIN) (((PORT) << 8U) + (PIN))
-/** @brief Pin not in use on this board. */
+
+
+/** @brief MACRO Port + Pin for GPIO pin. Example (2, 4) -> 0x0204 */
+#define RB_PORT_PIN_MAP(PORT, PIN) (((PORT) << 8u) + (PIN)) 
+
+/** @brief Value to ignore pin, for example if there is no a GPIO power control for a sensor. */
 #define RB_PIN_UNUSED              (0xFFFFU)
 
 #ifdef BOARD_PROPRIETARY
@@ -39,9 +50,9 @@
 #elif defined BOARD_RUUVIGW_ESP
 #   include "ruuvi_board_gwesp.h"
 #else
-#   error "Define your board in preprocessor"
+#   error "Define your board in ruuvi.boards.c/ruuvi_boards.h or use BOARD_PROPRIETARY."
 #endif
 
-#include "ruuvi_board_defaults.h"
+#include "ruuvi_board_defaults.h"  // Always add in the default settings (perhaps superseded by above)
 
-#endif
+#endif  //  RUUVI_BOARDS_H
