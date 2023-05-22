@@ -12,6 +12,7 @@ if(IDF_VERSION_MAJOR GREATER_EQUAL 4)
             ruuvi_board_pca10056e.h
             ruuvi_board_rauno.h
             ruuvi_board_ruuvitag_b.h
+            ruuvi_board_airq.h
             ruuvi_boards.h
         INCLUDE_DIRS "."
         )
