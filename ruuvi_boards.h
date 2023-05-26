@@ -49,6 +49,8 @@
 #   include "ruuvi_board_gwnrf.h"
 #elif defined BOARD_RUUVIGW_ESP
 #   include "ruuvi_board_gwesp.h"
+#elif defined BOARD_RUUVI_AIRQ
+#   include "ruuvi_board_airq.h"
 #else
 #   error "Define your board in ruuvi.boards.c/ruuvi_boards.h or use BOARD_PROPRIETARY."
 #endif
