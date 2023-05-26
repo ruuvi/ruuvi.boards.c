@@ -164,6 +164,8 @@
 #define RB_SHTCX_I2C_ADDRESS              0x70 //!< Static
 #define RB_ENVIRONMENTAL_SEN55_PRESENT    1
 #define RB_SEN55_I2C_ADDRESS              0x69 //!< Static
+#define RB_ENVIRONMENTAL_SCD41_PRESENT    1
+#define RB_SCD41_I2C_ADDRESS              0x62 //!< Static
 #define RB_ACCELEROMETER_LIS2DH12_PRESENT 0
 #define RB_ACCELEROMETER_LIS2DH12_SPI_USE 0
 #define RB_ACCELEROMETER_LIS2DH12_I2C_USE 0
@@ -175,6 +177,5 @@
 #define RB_NTC_ACTIVE                     0                       // NTC active state
 #define RB_NTC_PWR_PIN                    RB_PORT_PIN_MAP(0, 6)   //!< NTC power pin
 #define RB_NTC_ADC                        RB_AIN1                 //!< NTC ADC
-#define RB_ENVIRONMENTAL_SEN55_PRESENT    1
 
 #endif
