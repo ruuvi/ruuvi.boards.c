@@ -165,6 +165,10 @@
 #define RB_TMP117EXT_I2C_ADDRESS          (0x49U) //!< 0x48-0x4B depending on ADD0 pin
 #define RB_TMP117EXT_I2C_MAX_SPD RB_I2C_FREQUENCY_100k
 #define RB_I2C_MAX_SPD RB_I2C_FREQUENCY_400k
+//IH: this is a hack to enable support for external SHT4x sensor
+#define RB_ENVIRONMENTAL_SHT4XEXT_PRESENT   (1U)
+#define RB_SHT4XEXT_I2C_ADDRESS          (0x44U) 
+#define RB_SHT4XEXT_I2C_MAX_SPD RB_I2C_FREQUENCY_400k
 
 #define RB_TMP117_SENSOR_POWER_PIN        RB_PORT_PIN_MAP(0, 12)
 #define RB_SHTCX_SENSOR_POWER_PIN         RB_PORT_PIN_MAP(0, 12)
