@@ -141,6 +141,9 @@
 #endif
 
 // SPI defaults
+#ifndef RB_SPI_ENABLED
+#   define RB_SPI_ENABLED               1
+#endif
 #ifndef RB_SPI_SCLK_PIN
 #   define RB_SPI_SCLK_PIN              RB_PIN_UNUSED
 #endif
@@ -179,6 +182,9 @@
 #endif
 
 // I2C defaults
+#ifndef RB_I2C_ENABLED
+#   define RB_I2C_ENABLED               1
+#endif
 #ifndef RB_I2C_SDA_PIN
 #   define RB_I2C_SDA_PIN               RB_PORT_PIN_MAP(0, 4)
 #endif
@@ -233,6 +239,17 @@
 #endif
 #ifndef RB_INT_ACC2_PIN
 #   define RB_INT_ACC2_PIN              RB_PIN_UNUSED
+#endif
+#ifndef RB_INT_MOTION_PIN
+#   define RB_INT_MOTION_PIN            RB_PIN_UNUSED
+#endif
+
+// Motion sensor defaults
+#ifndef RB_PYD_SERIN_PIN
+#   define RB_PYD_SERIN_PIN             RB_PIN_UNUSED
+#endif
+#ifndef RB_PYD_DL_PIN
+#   define RB_PYD_DL_PIN                RB_PIN_UNUSED
 #endif
 
 // Total number of GPIO pins

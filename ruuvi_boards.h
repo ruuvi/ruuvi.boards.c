@@ -33,6 +33,8 @@
 #   include "ruuvi_board_rauno.h"
 #elif defined BOARD_RUUVITAG_B
 #   include "ruuvi_board_ruuvitag_b.h"
+#elif defined BOARD_RUUVITAG_C
+#   include "ruuvi_board_ruuvitag_c.h"
 #elif defined BOARD_KAARLE
 #   include "ruuvi_board_kaarle.h"
 #elif defined BOARD_KALERVO
