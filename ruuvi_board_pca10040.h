@@ -171,4 +171,12 @@
 #define RB_NTC_ACTIVE                     1                       // NTC active state
 #define RB_NTC_PWR_PIN                    RB_PORT_PIN_MAP(0, 6)   //!< NTC power pin
 #define RB_NTC_ADC                        RB_AIN1                 //!< NTC ADC
+
+// STHS34PF80 Infrared Presence Sensor (connect externally to I2C pins)
+#define RB_ENVIRONMENTAL_STHS34PF80_PRESENT  (1U)  //!< Enable for testing with external sensor
+#define RB_STHS34PF80_I2C_ADDRESS            (0x5AU) //!< Fixed 7-bit I2C address
+#define RB_STHS34PF80_I2C_MAX_SPD            RB_I2C_FREQUENCY_400k
+#define RB_STHS34PF80_SENSOR_POWER_PIN       RB_PIN_UNUSED  //!< External power
+#define RB_INT_STHS34PF80_PIN                RB_PIN_UNUSED  //!< Optional interrupt
+
 #endif

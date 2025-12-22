@@ -164,6 +164,14 @@
 #define RB_ENVIRONMENTAL_TMP117EXT_PRESENT   (1U)
 #define RB_TMP117EXT_I2C_ADDRESS          (0x49U) //!< 0x48-0x4B depending on ADD0 pin
 #define RB_TMP117EXT_I2C_MAX_SPD RB_I2C_FREQUENCY_100k
+
+// STHS34PF80 Infrared Presence Sensor (optional, depends on board variant)
+#define RB_ENVIRONMENTAL_STHS34PF80_PRESENT  (0U)  //!< Set to 1 if STHS34PF80 is populated
+#define RB_STHS34PF80_I2C_ADDRESS            (0x5AU) //!< Fixed 7-bit I2C address
+#define RB_STHS34PF80_I2C_MAX_SPD            RB_I2C_FREQUENCY_400k
+#define RB_STHS34PF80_SENSOR_POWER_PIN       RB_I2C_BUS_POWER_PIN  //!< Shared with I2C bus
+#define RB_INT_STHS34PF80_PIN                RB_PIN_UNUSED  //!< Optional interrupt (not used in MVP)
+
 #define RB_I2C_MAX_SPD RB_I2C_FREQUENCY_400k
 
 #define RB_TMP117_SENSOR_POWER_PIN        RB_PORT_PIN_MAP(0, 12)

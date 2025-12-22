@@ -302,6 +302,22 @@
 #   define RB_ACCELEROMETER_LIS2DH12_I2C_USE 0
 #endif
 
+#ifndef RB_ENVIRONMENTAL_STHS34PF80_PRESENT
+#   define RB_ENVIRONMENTAL_STHS34PF80_PRESENT 0
+#endif
+#ifndef RB_STHS34PF80_I2C_ADDRESS
+#   define RB_STHS34PF80_I2C_ADDRESS          0x5AU  //!< 7-bit I2C address (fixed)
+#endif
+#ifndef RB_STHS34PF80_I2C_MAX_SPD
+#   define RB_STHS34PF80_I2C_MAX_SPD          RB_I2C_FREQUENCY_400k
+#endif
+#ifndef RB_STHS34PF80_SENSOR_POWER_PIN
+#   define RB_STHS34PF80_SENSOR_POWER_PIN     RB_PIN_UNUSED
+#endif
+#ifndef RB_INT_STHS34PF80_PIN
+#   define RB_INT_STHS34PF80_PIN              RB_PIN_UNUSED  //!< Optional interrupt pin
+#endif
+
 #ifndef RB_INT_LEVEL_PIN
 #   define RB_INT_LEVEL_PIN RB_PIN_UNUSED
 #endif
