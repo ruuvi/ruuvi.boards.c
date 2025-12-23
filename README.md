@@ -1,6 +1,5 @@
 # ruuvi.boards.c
 Ruuvi board definitions. Has pinouts of Ruuvi boards as well as default configuration for some peripherals.
-In alpha stage, not recommended for any use yet.
 
 # Versioning
 Project has semantic versioning. Any patch update is a bugfix, minor update is a backwards compatible addition
@@ -13,6 +12,9 @@ Open an issue or pull request at GitHub.
 BSD-3
 
 # Changelog
+## 3.9.0
+ - Add STHS34PF80 thermal IR presence/motion sensor support
+
 ## 3.8.0 
  - Disable TMP, SHT from Keijo to save flash
 

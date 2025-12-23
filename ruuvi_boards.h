@@ -18,7 +18,7 @@
 #ifndef RUUVI_BOARDS_H
 #define RUUVI_BOARDS_H
 
-#define RUUVI_BOARDS_SEMVER "3.8.0"
+#define RUUVI_BOARDS_SEMVER "3.9.0"
 
 
 /** @brief MACRO Port + Pin for GPIO pin. Example (2, 4) -> 0x0204 */
