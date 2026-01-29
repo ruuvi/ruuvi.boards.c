@@ -86,6 +86,8 @@
 #define RB_LED_ACTIVITY              RB_LED_1
 #define RB_LED_STATUS_OK             RB_LED_1
 #define RB_LED_STATUS_ERROR          RB_LED_2
+#define RB_LED_BUTTON_PRESS          RB_LED_1
+#define RB_LED_CONFIG_ENABLED        RB_LED_2
 
 // Button definitions for PCA10040
 #define RB_BUTTON_PWR_PIN_NUMBER     0
@@ -112,12 +114,15 @@
 #define RB_SPI_FREQ                  RB_SPI_FREQUENCY_8M
 
 // I2C definitions for PCA10040
-#define RB_I2C_SDA_PIN               RB_PORT_PIN_MAP(0, 4)
-#define RB_I2C_SCL_PIN               RB_PORT_PIN_MAP(0, 5)
+// Using P0.26 (SDA) and P0.27 (SCL) to avoid conflict with UART/interface MCU
+#define RB_I2C_SDA_PIN               RB_PORT_PIN_MAP(0, 26)
+#define RB_I2C_SCL_PIN               RB_PORT_PIN_MAP(0, 27)
 #define RB_I2C_FREQUENCY_100k        0
 #define RB_I2C_FREQUENCY_250k        1
 #define RB_I2C_FREQUENCY_400k        2
 #define RB_I2C_FREQ                  RB_I2C_FREQUENCY_100k
+#define RB_I2C_MAX_SPD               RB_I2C_FREQUENCY_400k
+#define RB_I2C_BUS_POWER_PIN         RB_PIN_UNUSED
 
 // UART definitions for PCA10040
 #define RB_UART_TX_PIN               RB_PORT_PIN_MAP(0, 12)
