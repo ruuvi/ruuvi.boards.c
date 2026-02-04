@@ -84,6 +84,8 @@
 #define RB_LEDS_ACTIVE_STATE         {0, 0, 0, 0}
 #define RB_LEDS_LIST                 { RB_LED_1, RB_LED_2, RB_LED_3, RB_LED_4 }
 #define RB_LED_ACTIVITY              RB_LED_1
+#define RB_LED_PRESENCE              RB_LED_3
+#define RB_LED_MOTION                RB_LED_4
 #define RB_LED_STATUS_OK             RB_LED_1
 #define RB_LED_STATUS_ERROR          RB_LED_2
 #define RB_LED_BUTTON_PRESS          RB_LED_1

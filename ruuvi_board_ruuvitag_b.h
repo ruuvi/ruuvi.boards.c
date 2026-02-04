@@ -75,6 +75,8 @@
 #define RB_LED_RED                   RB_LED_1
 #define RB_LED_GREEN                 RB_LED_2
 #define RB_LED_ACTIVITY              RB_LED_GREEN
+#define RB_LED_PRESENCE              RB_LED_GREEN
+#define RB_LED_MOTION              RB_LED_RED
 #define RB_LED_STATUS_OK             RB_LED_GREEN
 #define RB_LED_STATUS_ERROR          RB_LED_RED
 #define RB_LED_BUTTON_PRESS          RB_LED_GREEN
