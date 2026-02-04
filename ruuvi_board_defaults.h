@@ -113,6 +113,12 @@
 #ifndef RB_LED_CONFIG_ENABLED
 #   define RB_LED_CONFIG_ENABLED        RB_PIN_UNUSED
 #endif
+#ifndef RB_LED_PRESENCE
+#   define RB_LED_PRESENCE              RB_PIN_UNUSED
+#endif
+#ifndef RB_LED_MOTION
+#   define RB_LED_MOTION                RB_PIN_UNUSED
+#endif
 
 // Button defaults
 #ifndef RB_BUTTON_PWR_PIN_NUMBER
