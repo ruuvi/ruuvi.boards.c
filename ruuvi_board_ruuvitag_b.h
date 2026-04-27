@@ -166,6 +166,10 @@
 #define RB_ENVIRONMENTAL_TMP117EXT_PRESENT   (1U)
 #define RB_TMP117EXT_I2C_ADDRESS          (0x49U) //!< 0x48-0x4B depending on ADD0 pin
 #define RB_TMP117EXT_I2C_MAX_SPD RB_I2C_FREQUENCY_100k
+#define RB_MAGNETOMETER_MMC5616WA_PRESENT (1U)
+#define RB_MMC5616WA_I2C_ADDRESS          (0x30U) //!< Fixed 7-bit I2C address
+#define RB_MMC5616WA_I2C_MAX_SPD          RB_I2C_FREQUENCY_100k
+#define RB_MMC5616WA_SENSOR_POWER_PIN     RB_I2C_BUS_POWER_PIN
 
 // STHS34PF80 Infrared Presence Sensor (optional, depends on board variant)
 #define RB_ENVIRONMENTAL_STHS34PF80_PRESENT  (1U)  //!< Set to 1 if STHS34PF80 is populated

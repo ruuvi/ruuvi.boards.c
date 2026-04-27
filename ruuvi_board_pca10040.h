@@ -186,4 +186,10 @@
 #define RB_STHS34PF80_SENSOR_POWER_PIN       RB_PIN_UNUSED  //!< External power
 #define RB_INT_STHS34PF80_PIN                RB_PIN_UNUSED  //!< Optional interrupt
 
+// MMC5616WA magnetometer (connect externally to I2C pins)
+#define RB_MAGNETOMETER_MMC5616WA_PRESENT    (1U)
+#define RB_MMC5616WA_I2C_ADDRESS             (0x30U) //!< Fixed 7-bit I2C address
+#define RB_MMC5616WA_I2C_MAX_SPD             RB_I2C_FREQUENCY_100k
+#define RB_MMC5616WA_SENSOR_POWER_PIN        RB_PIN_UNUSED  //!< External power
+
 #endif
